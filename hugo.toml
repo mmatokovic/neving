@@ -1,0 +1,14 @@
+baseURL = 'http://neving.hr/'
+title = 'Neving'
+defaultContentLanguage = 'hr'
+enableEmoji = true
+
+[languages]
+  [languages.en]
+    languageName = 'En'
+    contentDir = 'content/en'
+    weight = 2
+  [languages.hr]
+    languageName = 'Hr'
+    contentDir = 'content/hr'
+    weight = 1

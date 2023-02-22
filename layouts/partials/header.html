@@ -1,0 +1,107 @@
+<header aria-label="Site Header" class="font-kavoon text-orange-500 shadow-sm z-10 inset-x-0 top-0{{ if .IsHome }} bg-white{{ end }}">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <div class="flex-1 md:flex md:items-center">
+          <a class="text-gray-500 text-2xl transition hover:text-gray-500/75" href="{{ .Site.BaseURL | relLangURL }}">
+            <img src="" class="inline-flex rounded-full hover:animate-wiggle" alt="Logo" width="40" height="40">
+            <span class="hidden lg:inline-flex lg:inline-flex-1 text-gray-300 ml-2">Mislav's Webpage</span>
+          </a>
+        </div>
+        <div class="md:flex md:items-center md:gap-12">
+          <nav aria-label="Site Nav" class="hidden md:block">
+            <ul class="flex items-center gap-6 text-base font-medium leading-6 text-black">
+                {{- range .Site.Menus.main}}
+                <li>
+                    <a class="hover:text-gray-500/75 relative font-medium text-orange-500 before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-gradient-to-r from-purple-400 to-pink-600 before:transition hover:before:scale-100 {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}}active{{ end }}" href="{{ .URL | absLangURL }}">
+                        {{ .Pre }}<span>{{ i18n .Identifier | default .Name}}</span>{{ .Post }}
+                    </a>
+                </li>
+                {{- end}}
+            </ul>
+          </nav>
+          <div class="flex items-center gap-4">
+            <div class="sm:flex sm:gap-4">
+              <a class="rounded-md bg-gradient-to-b from-gray-600 to-black hover:from-gray-500 hover:to-black px-5 py-2.5 text-sm font-medium text-white shadow hover:shadow-2xl transition hover:-rotate-2 hover:scale-110 focus:outline-none" href="/contact">
+                Contact
+              </a>
+            </div>
+            <div class="block md:hidden">
+              <button id="hamburger-btn" class="rounded p-2 text-gray-600 transition hover:text-gray-600/75">
+                <svg width="41" height="17" viewBox="0 0 41 17" fill="inherit" xmlns="http://www.w3.org/2000/svg"><rect x="7" width="26" height="2" rx="1"></rect> <rect x="7" y="15" width="26" height="2" rx="1"></rect> <rect y="7" width="41" height="2" rx="1"></rect></svg>
+              </button>
+            </div>
+          </div>
+          <ul>
+          {{ if .Site.IsMultiLingual }}
+            {{ range .Site.Languages }}
+              {{ if eq . $.Site.Language }}
+                <li><a href="#" class="active language">{{ .LanguageName }}</a></li>
+              {{ else }}
+                {{ range $.Translations }}
+                <li><a href="{{ .Permalink }}" class="">{{ .Language.LanguageName }}</a></li>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+</header>
+<aside id="mobile-menu" class="fixed overflow-hidden inset-0 z-10 overflow-y-auto h-screen w-full bg-gray-900 px-4 sm:px-6 lg:px-8 animate-slide" hidden>
+  <div class="flex h-16 items-center w-full justify-between gap-4 overflow-hidden">
+    <div class="flex-1 md:flex md:items-center">
+      <a class="text-gray-500 text-2xl transition hover:text-gray-500/75" href="{{ .Site.BaseURL | relLangURL }}">
+        <img src="" class="inline-flex rounded-full hover:animate-wiggle" alt="Logo" width="40" height="40">
+      </a>
+    </div>
+    <div class="flex items-center gap-4">
+      <button id="close-btn" class="rounded p-2">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.41431" width="26" height="2" rx="1" transform="rotate(45 1.41431 0)" fill="white"></rect> <rect x="0.100586" y="18.4853" width="26" height="2" rx="1" transform="rotate(-45 0.100586 18.4853)" fill="white"></rect></svg>
+      </button>
+    </div>
+  </div>
+  <div class="flex flex-col justify-center">
+    <nav class="text-white text-4xl font-extrabold divide-y">
+      {{- range .Site.Menus.main}}
+        <a class="block relative p-6 hover:bg-gradient-to-r from-purple-400 to-pink-600 hover:transition-width hover:duration-900 ease-out hover:ease-in hover:w-full {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}}bg-gradient-to-r from-purple-400 to-pink-600{{ end }}" href="{{ .URL }}">
+          {{ .Pre }}<span>{{ .Name }}</span>{{ .Post }}
+        </a>
+      {{- end}}
+      <a class="block text-center relative p-6 hover:bg-gradient-to-r from-purple-400 to-pink-600 hover:transition-width hover:duration-900 ease-out hover:ease-in hover:w-full" href="/contact">
+        <span>Contact</span>
+      </a>
+    </nav>
+    <div class="block relative text-white text-center uppercase">
+      get social :)
+    </div>
+      <ul class="relative inline-flex justify-center">
+        <li class="m-2">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+              <path d="M27.7 54.4C42.446 54.4 54.4 42.446 54.4 27.7C54.4 12.954 42.446 1 27.7 1C12.954 1 1 12.954 1 27.7C1 42.446 12.954 54.4 27.7 54.4Z" stroke="white" stroke-width="0.6684" stroke-miterlimit="10"></path> <path d="M27.7 33.2C24.7 33.2 22.2 30.7 22.2 27.7C22.2 24.7 24.7 22.2 27.7 22.2C30.7 22.2 33.1999 24.7 33.1999 27.7C33.1999 30.7 30.7 33.2 27.7 33.2ZM27.7 24C25.7 24 24 25.6 24 27.7C24 29.7 25.6 31.4 27.7 31.4C29.7 31.4 31.4 29.8 31.4 27.7C31.2999 25.6 29.7 24 27.7 24Z" fill="white"></path> 
+              <path d="M32.8 38.4H22.6C19.5 38.4 17 35.9 17 32.8V22.6C17 19.5 19.5 17 22.6 17H32.8C35.9 17 38.4 19.5 38.4 22.6V32.8C38.4 35.9 35.9 38.4 32.8 38.4ZM22.6 18.8C20.5 18.8 18.8 20.5 18.8 22.6V32.8C18.8 34.9 20.5 36.6 22.6 36.6H32.8C34.9 36.6 36.6 34.9 36.6 32.8V22.6C36.6 20.5 34.9 18.8 32.8 18.8H22.6Z" fill="white"></path> <path d="M33.3 23.2C34.018 23.2 34.6 22.618 34.6 21.9C34.6 21.182 34.018 20.6 33.3 20.6C32.582 20.6 32 21.182 32 21.9C32 22.618 32.582 23.2 33.3 23.2Z" fill="white"></path>
+            </svg>
+          </a>
+        </li> 
+        <li class="m-2">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+              <path d="M27.3001 54.4C42.0461 54.4 54.0001 42.446 54.0001 27.7C54.0001 12.954 42.0461 1 27.3001 1C12.5541 1 0.600098 12.954 0.600098 27.7C0.600098 42.446 12.5541 54.4 27.3001 54.4Z" stroke="white" stroke-width="0.6684" stroke-miterlimit="10"></path> 
+              <path d="M33.1001 20.8V17H29.8001C27.2001 17 25.0001 19.1 25.0001 21.8V25.3H21.6001V29.2H25.0001V38.4H29.1001V29.1H32.2001L32.8001 25.2H29.1001V22.4C29.1001 21.5 29.8001 20.7 30.8001 20.7H33.1001V20.8Z" fill="white"></path>
+            </svg>
+          </a>
+        </li> 
+        <li class="m-2">
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <svg width="56" height="55" viewBox="0 0 56 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+              <path d="M28 54.4C42.746 54.4 54.7001 42.446 54.7001 27.7C54.7001 12.954 42.746 1 28 1C13.254 1 1.30005 12.954 1.30005 27.7C1.30005 42.446 13.254 54.4 28 54.4Z" stroke="white" stroke-width="0.6684" stroke-miterlimit="10"></path>
+              <path d="M25.2 26.7C25.2 26.7 27.9999 26.5 27.9999 23.2C27.9999 19.9 25.6999 18.3 22.7999 18.3H17.4999H17.2999H13.2V36.6H17.2999H17.4999H22.8999C22.8999 36.6 28.7 36.8 28.7 31.1C28.6 31.3 28.9 26.7 25.2 26.7ZM17.4999 21.6H22.0999H22.7C22.7 21.6 23.9999 21.6 23.9999 23.5C23.9999 25.4 23.2999 25.7 22.2999 25.7H17.3999V21.6H17.4999ZM22.5999 33.4H17.4999V28.5H22.8999C22.8999 28.5 24.7999 28.5 24.7999 31C24.6999 33.2 23.2999 33.4 22.5999 33.4Z" fill="white"></path> 
+              <path d="M36.2999 23C29.2999 23 29.2999 30 29.2999 30C29.2999 30 28.7999 37 36.2999 37C36.2999 37 42.5999 37.4 42.5999 32.1H39.3999C39.3999 32.1 39.4999 34 36.3999 34C36.3999 34 33.1999 34.2 33.1999 30.8H42.6999C42.6999 31 43.7999 23 36.2999 23ZM39.1999 28.5H33.1999C33.1999 28.5 33.5999 25.6 36.3999 25.6C39.1999 25.6 39.1999 28.5 39.1999 28.5Z" fill="white"></path> 
+              <path d="M40.1 19.4H32.5V21.3H40.1V19.4Z" fill="white"></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+  </div>
+</aside>

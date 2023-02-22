@@ -1,0 +1,17 @@
+{{ define "main" }}
+<!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+<main class="container py-12 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+  {{.Content}}
+  <!-- Ranges through content/posts/*.md -->
+  {{ range .Data.Pages }}
+  <article>
+    <h3>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h3>
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+            {{ .Date.Format "January 2, 2006" }}
+        </time>
+  </article>
+  {{ end }}
+</main>
+{{ end }}

@@ -1,0 +1,15 @@
+{{ define "main" }}
+<main>
+    <div class="prose prose-neutral container mx-auto mt-8 lg:prose-lg">
+        <header class="text-center mb-8 mt-20">
+            <h1 class="text-5xl mb-1">{{ .Title}}</h1>
+            <p class="my-0 text-gray3">find the content you're looking for</p>
+        </header>
+    </div>
+    {{ range .Pages }}
+        <span class="inline-block p-2">
+            <a href="{{.Permalink | relURL }}"><span class="tag tag-{{anchorize .Title}} tag-lg">#{{ anchorize .Title}}</span></a>
+        </span>
+    {{ end }}
+</main>
+{{ end }}

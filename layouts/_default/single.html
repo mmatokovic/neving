@@ -1,0 +1,12 @@
+{{ define "main" }}
+<main class="container py-12 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+    <h1>{{ .Title }}</h1>
+    {{ if .Date }}
+    <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+    {{ end }}
+    {{ if .Params.image }}
+    	<img src="{{ .Params.image }}" >
+    {{ end }}
+    {{ .Content }}
+</main>
+{{ end }}
