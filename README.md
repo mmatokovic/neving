@@ -1,23 +1,14 @@
-### Hi there 👋
+## Neving
 
-I am **software engineer** at Croatia osiguranje d.d. finished studying IT at the University of Zagreb.
+The Neving website built with [Tailwind](https://tailwindcss.com/) and [Hugo](https://gohugo.io/) hosted on [cloudflare](https://www.cloudflare.com/) for Neving d.o.o.
 
-###### *In case that you had not catch it yet, I like to use Github for my personal projects.
+## Branches
 
-I'm available, feel free to [Contact me](https://mmatokovic.netlify.app/).
+* The `prod` branch is where the site is automatically built from, and is the place to put changes relevant to the current version.
+* The `dev` branch is where we store changes that are related to the next release.
 
-<!--
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=mmatokovic)](https://github.com/anuraghazra/github-readme-stats)
-**mmatokovi/mmatokovi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## License
+[Apache License 2.0](LICENSE)
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Author Information
+[Mislav Matoković](https://github.com/mmatokovic)

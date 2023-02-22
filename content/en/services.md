@@ -1,6 +1,6 @@
 ---
-title: "Real Estate"
-slug: real-estate
+title: "Services"
+slug: services
 draft: false
 description: Home
 menu: main

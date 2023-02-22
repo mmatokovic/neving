@@ -1,10 +1,10 @@
-<header aria-label="Site Header" class="font-kavoon text-orange-500 shadow-sm z-10 inset-x-0 top-0{{ if .IsHome }} bg-white{{ end }}">
+<header aria-label="Site Header" class="font-kavoon text-black shadow-sm z-10 inset-x-0 top-0{{ if .IsHome }} bg-white{{ end }}">
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <div class="flex-1 md:flex md:items-center">
           <a class="text-gray-500 text-2xl transition hover:text-gray-500/75" href="{{ .Site.BaseURL | relLangURL }}">
             <img src="" class="inline-flex rounded-full hover:animate-wiggle" alt="Logo" width="40" height="40">
-            <span class="hidden lg:inline-flex lg:inline-flex-1 text-gray-300 ml-2">Mislav's Webpage</span>
+            <span class="hidden lg:inline-flex lg:inline-flex-1 ml-2">Neving</span>
           </a>
         </div>
         <div class="md:flex md:items-center md:gap-12">
@@ -12,30 +12,18 @@
             <ul class="flex items-center gap-6 text-base font-medium leading-6 text-black">
                 {{- range .Site.Menus.main}}
                 <li>
-                    <a class="hover:text-gray-500/75 relative font-medium text-orange-500 before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-gradient-to-r from-purple-400 to-pink-600 before:transition hover:before:scale-100 {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}}active{{ end }}" href="{{ .URL | absLangURL }}">
+                    <a class="hover:text-gray-500/75 relative font-medium text-black before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-gradient-to-r from-purple-400 to-pink-600 before:transition hover:before:scale-100 {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}}active{{ end }}" href="{{ .URL | absLangURL }}">
                         {{ .Pre }}<span>{{ i18n .Identifier | default .Name}}</span>{{ .Post }}
                     </a>
                 </li>
                 {{- end}}
             </ul>
           </nav>
-          <div class="flex items-center gap-4">
-            <div class="sm:flex sm:gap-4">
-              <a class="rounded-md bg-gradient-to-b from-gray-600 to-black hover:from-gray-500 hover:to-black px-5 py-2.5 text-sm font-medium text-white shadow hover:shadow-2xl transition hover:-rotate-2 hover:scale-110 focus:outline-none" href="/contact">
-                Contact
-              </a>
-            </div>
-            <div class="block md:hidden">
-              <button id="hamburger-btn" class="rounded p-2 text-gray-600 transition hover:text-gray-600/75">
-                <svg width="41" height="17" viewBox="0 0 41 17" fill="inherit" xmlns="http://www.w3.org/2000/svg"><rect x="7" width="26" height="2" rx="1"></rect> <rect x="7" y="15" width="26" height="2" rx="1"></rect> <rect y="7" width="41" height="2" rx="1"></rect></svg>
-              </button>
-            </div>
-          </div>
           <ul>
           {{ if .Site.IsMultiLingual }}
             {{ range .Site.Languages }}
               {{ if eq . $.Site.Language }}
-                <li><a href="#" class="active language">{{ .LanguageName }}</a></li>
+                <li><a href="#" class="hidden">{{ .LanguageName }}</a></li>
               {{ else }}
                 {{ range $.Translations }}
                 <li><a href="{{ .Permalink }}" class="">{{ .Language.LanguageName }}</a></li>
@@ -65,7 +53,7 @@
     <nav class="text-white text-4xl font-extrabold divide-y">
       {{- range .Site.Menus.main}}
         <a class="block relative p-6 hover:bg-gradient-to-r from-purple-400 to-pink-600 hover:transition-width hover:duration-900 ease-out hover:ease-in hover:w-full {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}}bg-gradient-to-r from-purple-400 to-pink-600{{ end }}" href="{{ .URL }}">
-          {{ .Pre }}<span>{{ .Name }}</span>{{ .Post }}
+          {{ .Pre }}<span>{{ i18n .Identifier | default .Name}}</span>{{ .Post }}
         </a>
       {{- end}}
       <a class="block text-center relative p-6 hover:bg-gradient-to-r from-purple-400 to-pink-600 hover:transition-width hover:duration-900 ease-out hover:ease-in hover:w-full" href="/contact">

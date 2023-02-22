@@ -1,6 +1,6 @@
 ---
-title: "Real Estate"
-slug: real-estate
+title: "Djelatnosti"
+slug: djelatnosti
 draft: false
 description: Home
 menu: main
