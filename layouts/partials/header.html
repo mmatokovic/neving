@@ -52,7 +52,7 @@
   <div class="flex flex-col justify-center">
     <nav class="text-white text-4xl font-extrabold divide-y">
       {{- range .Site.Menus.main}}
-        <a class="block relative p-6 hover:bg-gradient-to-r from-purple-400 to-pink-600 hover:transition-width hover:duration-900 ease-out hover:ease-in hover:w-full {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}}bg-gradient-to-r from-purple-400 to-pink-600{{ end }}" href="{{ .URL }}">
+        <a class="block relative p-6 hover:bg-gradient-to-r from-purple-400 to-pink-600 hover:transition-width hover:duration-900 ease-out hover:ease-in hover:w-full {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}}bg-gradient-to-r from-purple-400 to-pink-600{{ end }}" href="{{ .URL | absLangURL }}">
           {{ .Pre }}<span>{{ i18n .Identifier | default .Name}}</span>{{ .Post }}
         </a>
       {{- end}}

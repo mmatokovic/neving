@@ -1,7 +1,11 @@
-baseURL = 'http://neving.hr/'
+baseURL = 'https://neving.pages.dev/'
 title = 'Neving'
 defaultContentLanguage = 'hr'
 enableEmoji = true
+
+enableRobotsTXT = true
+enableGitInfo = true
+googleAnalytics = ''
 
 [languages]
   [languages.en]
