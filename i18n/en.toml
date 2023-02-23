@@ -1,2 +1,5 @@
-[home]
-  other = 'Home'
+[home_hero_title]
+  other = 'Design, Build and operate assets better'
+
+[contact]
+  other = 'Contact us'

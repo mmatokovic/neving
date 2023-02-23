@@ -22,7 +22,7 @@ module.exports = {
       slide: 'slide .50s ease-in-out',
     },
     fontFamily: {
-      'kavoon': ['Kavoon', 'cursive'],
+      'notosans': ['Noto Sans', 'sans-serif'],
     },
   },
   plugins: [

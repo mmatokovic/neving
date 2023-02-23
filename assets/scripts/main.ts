@@ -15,13 +15,18 @@ window.addEventListener('scroll', function() {
 
 });
 
-
 const hamburger = document.getElementById("hamburger-btn");
 if (hamburger != null) {
     const mobile = document.getElementById("mobile-menu") as HTMLElement;
 
     hamburger.addEventListener('click', () => {
         mobile.toggleAttribute("hidden");
+    });
+}
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js');
     });
 }
 

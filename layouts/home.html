@@ -1,50 +1,228 @@
 {{ define "main" }}
-{{ $star := resources.Get "images/icon/star-regular.svg" }}
 <main class="">
-    <section class="bg-gray-50">
-        <div
-          class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
+  <section id="header"
+  class="overflow-hidden bg-cover bg-center bg-no-repeat"
+>
+  <div class="bg-black/25 p-8 md:p-12 lg:px-16 lg:py-24">
+    <div class="text-center sm:text-left container py-12 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 ">
+      <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
+        {{ i18n "home_hero_title" }}
+      </h2>
+
+      <p
+        class="hidden max-w-lg text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed"
+      >
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+        officia corporis quasi doloribus iure architecto quae voluptatum beatae
+        excepturi dolores.
+      </p>
+
+      <div class="mt-4 sm:mt-8">
+        <a
+          href="{{ relLangURL "contact" }}"
+          class="inline-block rounded-md bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
         >
-          <div class="mx-auto max-w-xl text-center">
-            <h1 class="text-3xl font-extrabold sm:text-5xl">
-              {{ i18n "home" }}
-              <strong class="font-extrabold text-red-700 sm:block">
-                Increase Conversion.
-              </strong>
-            </h1>
-      
-            <p class="mt-4 sm:text-xl sm:leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo
-              tenetur fuga ducimus numquam ea!
-            </p>
-      
-            <div class="mt-8 flex flex-wrap justify-center gap-4">
-              <a
-                class="block w-full rounded bg-red-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
-                href="/get-started"
-              >
-                Get Started
-              </a>
-      
-              <a
-                class="block w-full rounded px-12 py-3 text-sm font-medium text-red-600 shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
-                href="/about"
-              >
-                Learn More
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="bg-gray-50">
-        <div
-          class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
+        <span>{{ i18n "contact" }}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="flex inline-block -mt-20 flex items-center bg-gray-100 container py-12 h-64	 mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 " id="blueprint">
+  <div class="">
+  </div>
+</div>
+<div class="sm:max-w-5xl pt-8 rounded-xl bg-white mx-4 sm:mx-8 md:mx-auto">
+  <div class="w-11/12 sm:w-2/3 mx-auto mb-10">
+    <h1 class="focus:outline-none text-normal text-center text-gray-300 font-extrabold pt-4">
+      Trusted by companies
+    </h1>
+  </div>
+  {{ $zagreb := resources.Get "images/Coat_of_arms_of_Zagreb.svg" }}
+  {{ $heplogo := resources.Get "images/hep-logo.svg" }}
+  {{ $hrvatske_autoceste := resources.Get "images/Hrvatske_autoceste_d.o.o._Logo.svg" }}
+  {{ $hz := resources.Get "images/hz-hrvatske-zeljeznice.svg" }}
+  {{ $hrvatske_vode := resources.Get "images/hrvatske-vode-logo-vector.svg" }}
+  {{ $smzgrb := resources.Get "images/smzgrb_web.png" }}
+  <div class="sm:py-6 px-8 sm:24 flex flex-wrap items-center border-b-2 border-gray-300">
+    <div
+      class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+      <img class="focus:outline-none w-12 sm:w-16 " src="{{ $zagreb.RelPermalink }}"
+        alt="Adidas" role="img" />
+    </div>
+    <div
+      class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl ">
+      <img class="focus:outline-none w-12 sm:w-16" src="{{ $heplogo.RelPermalink }}"
+        alt="Chanel" role="img" />
+    </div>
+    <div
+      class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+      <img class="focus:outline-none w-12 sm:w-16" src="{{ $hrvatske_autoceste.RelPermalink }}"
+        alt="Nike" role="img" />
+    </div>
+    <div
+      class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+      <img class="focus:outline-none w-12 sm:w-16" src="{{ $hz.RelPermalink }}"
+        alt="Toyota" role="img" />
+    </div>
+    <div
+      class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+      <img class="focus:outline-none w-12 sm:w-16" src="{{ $hrvatske_vode.RelPermalink }}"
+        alt="Toyota" role="img" />
+    </div>
+    <div
+      class="w-1/3 sm:w-1/6 flex justify-center xl:pb-10 pb-16 items-center inset-0 transform  hover:scale-75 transition duration-300 contrast-75 hover:contrast-100 drop-shadow-xl">
+      <img class="focus:outline-none w-12 sm:w-16" src="{{ $smzgrb.RelPermalink }}"
+        alt="Toyota" role="img" />
+    </div>
+  </div>
+</div>
+<section class="bg-white text-gray-600">
+  <div class="max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 container mx-auto">
+    <div class="max-w-xl">
+      <h2 class="text-3xl font-bold sm:text-4xl">What makes us special</h2>
+
+      <p class="mt-4 text-gray-300">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+        dolores iure fugit totam iste obcaecati. Consequatur ipsa quod ipsum
+        sequi culpa delectus, cumque id tenetur quibusdam, quos fuga minima.
+      </p>
+    </div>
+
+    <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <a
+        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        href="/services/digital-campaigns"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-10 w-10 text-pink-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
         >
-          <div class="mx-auto max-w-xl text-center">
-            <h1 class="text-3xl font-extrabold sm:text-5xl">
-              Recent.
-            </h1>
+          <path d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path
+            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+          />
+        </svg>
+
+        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+
+        <p class="mt-1 text-sm text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
+          possimus adipisci distinctio alias voluptatum blanditiis laudantium.
+        </p>
+      </a>
+
+      <a
+        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        href="/services/digital-campaigns"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-10 w-10 text-pink-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path
+            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+          />
+        </svg>
+
+        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+
+        <p class="mt-1 text-sm text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
+          possimus adipisci distinctio alias voluptatum blanditiis laudantium.
+        </p>
+      </a>
+
+      <a
+        class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+        href="/services/digital-campaigns"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-10 w-10 text-pink-500"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path
+            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+          />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+          />
+        </svg>
+
+        <h2 class="mt-4 text-xl font-bold text-white">Digital campaigns</h2>
+
+        <p class="mt-1 text-sm text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
+          possimus adipisci distinctio alias voluptatum blanditiis laudantium.
+        </p>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="bg-white" id="">
+  <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+    <div class="mt-8 sm:mt-12">
+      <dl class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <div
+          class="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center"
+        >
+          <dt class="order-last text-lg font-medium text-gray-500">
+            Total Sales
+          </dt>
+
+          <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">
+            $4.8m
+          </dd>
         </div>
-      </section>
+
+        <div
+          class="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center"
+        >
+          <dt class="order-last text-lg font-medium text-gray-500">
+            Official Addons
+          </dt>
+
+          <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">24</dd>
+        </div>
+
+        <div
+          class="flex flex-col rounded-lg border border-gray-100 px-4 py-8 text-center"
+        >
+          <dt class="order-last text-lg font-medium text-gray-500">
+            Total Addons
+          </dt>
+
+          <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">86</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
 </main>
 {{ end }} 

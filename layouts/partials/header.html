@@ -1,4 +1,4 @@
-<header aria-label="Site Header" class="font-kavoon text-black shadow-sm z-10 inset-x-0 top-0{{ if .IsHome }} bg-white{{ end }}">
+<header aria-label="Site Header" class="font-notosans text-black shadow-sm z-10 inset-x-0 top-0{{ if .IsHome }} bg-white{{ end }}">
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <div class="flex-1 md:flex md:items-center">
@@ -12,13 +12,14 @@
             <ul class="flex items-center gap-6 text-base font-medium leading-6 text-black">
                 {{- range .Site.Menus.main}}
                 <li>
-                    <a class="hover:text-gray-500/75 relative font-medium text-black before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-gradient-to-r from-purple-400 to-pink-600 before:transition hover:before:scale-100 {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}}active{{ end }}" href="{{ .URL | absLangURL }}">
+                    <a class="hover:text-gray-500/75 relative font-medium text-black before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-gradient-to-r from-indigo-300 to-indigo-600 before:transition hover:before:scale-100 {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}}active{{ end }}" href="{{ .URL | absLangURL }}">
                         {{ .Pre }}<span>{{ i18n .Identifier | default .Name}}</span>{{ .Post }}
                     </a>
                 </li>
                 {{- end}}
             </ul>
           </nav>
+          <span>|</span>
           <ul>
           {{ if .Site.IsMultiLingual }}
             {{ range .Site.Languages }}
@@ -26,7 +27,7 @@
                 <li><a href="#" class="hidden">{{ .LanguageName }}</a></li>
               {{ else }}
                 {{ range $.Translations }}
-                <li><a href="{{ .Permalink }}" class="">{{ .Language.LanguageName }}</a></li>
+                <li><a href="{{ .Permalink }}" class="text-blue-400">{{ .Language.LanguageName }}</a></li>
                 {{ end }}
               {{ end }}
             {{ end }}
