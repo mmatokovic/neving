@@ -4,5 +4,5 @@ slug: kontakt
 draft: false
 description: Home
 menu: main
-weight: 10
+weight: 60
 ---

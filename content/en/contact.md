@@ -5,5 +5,5 @@ draft: false
 description: Home
 identifier: about
 menu: main
-weight: 10
+weight: 60
 ---

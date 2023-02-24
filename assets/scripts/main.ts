@@ -1,7 +1,9 @@
 import "instant.page"
 import "autotrack"
 import Alpine from 'alpinejs';
-
+import intersect from '@alpinejs/intersect'
+ 
+Alpine.plugin(intersect)
 window.Alpine = Alpine;
 Alpine.start();
 
@@ -48,3 +50,24 @@ if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js');
     });
 }
+
+function animatedCounter(targer, time = 200, start = 0) {
+    return {
+      current: 0,
+      target: targer,
+      time: time,
+      start: start,
+      updatecounter: function() {
+        start = this.start;
+        const increment = (this.target - start) / this.time;
+        const handle = setInterval(() => {
+          if (this.current < this.target)
+            this.current += increment
+          else {
+            clearInterval(handle);
+            this.current = this.target
+          }
+        }, 1);
+      }
+    };
+  }

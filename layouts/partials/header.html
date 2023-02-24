@@ -4,7 +4,7 @@
         <div class="flex-1 md:flex md:items-center">
           <a class="text-gray-500 text-2xl transition hover:text-gray-500/75" href="{{ .Site.BaseURL | relLangURL }}">
             <img src="" class="inline-flex rounded-full hover:animate-wiggle" alt="Logo" width="40" height="40">
-            <span class="hidden lg:inline-flex lg:inline-flex-1 ml-2">Neving</span>
+            <span class="hidden lg:inline-flex lg:inline-flex-1 ml-2">{{ .Site.Title }}</span>
           </a>
         </div>
         <div class="md:flex md:items-center md:gap-12">
@@ -19,15 +19,14 @@
                 {{- end}}
             </ul>
           </nav>
-          <span>|</span>
-          <ul>
+          <ul class="font-bold">
           {{ if .Site.IsMultiLingual }}
             {{ range .Site.Languages }}
               {{ if eq . $.Site.Language }}
                 <li><a href="#" class="hidden">{{ .LanguageName }}</a></li>
               {{ else }}
                 {{ range $.Translations }}
-                <li><a href="{{ .Permalink }}" class="text-blue-400">{{ .Language.LanguageName }}</a></li>
+                <li><a href="{{ .Permalink }}" class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-indigo-600">{{ .Language.LanguageName }}</a></li>
                 {{ end }}
               {{ end }}
             {{ end }}
