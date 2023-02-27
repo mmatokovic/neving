@@ -6,6 +6,9 @@ module.exports = {
       transitionProperty: {
         'width': 'width',
       },
+      grayscale: {
+        50: '50%',
+      }
     },
     keyframes: {
       wiggle: {

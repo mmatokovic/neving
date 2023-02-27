@@ -7,6 +7,33 @@
 [contact]
   other = 'kontaktirajte nas'
 
+[contact_company_information]
+  other = 'Kontakt podaci'
+
+[contact_company_data]
+  other = 'Matični podaci tvrtke'
+
+[contact_capital]
+  other = 'Temeljni kapital'
+
+[contact_vat]
+  other = 'OIB'
+
+[contact_name]
+  other = 'Ime'
+
+[contact_email]
+  other = 'Email adresa'
+
+[contact_phone]
+  other = 'Broj telefona'
+
+[contact_message]
+  other = 'Poruka'
+
+[contact_enquiry]
+  other = 'Pošaljite Upit'
+
 [about]
   other = 'o nama'
 
@@ -48,3 +75,12 @@
 
 [service_new_construction_text]
   other = 'Nova kuća, nadgradnja, individualna kuća, dvojna kuća, apartmani, povoljna klasična kuća od opeke, izvođač gradnje.'
+
+[rights]
+  other = 'Sva prava pridržana'
+
+[404_cantfind]
+  other = 'Ne možemo pronaći tu stranicu.'
+
+[404_home]
+  other = 'Natrag na Početnu'

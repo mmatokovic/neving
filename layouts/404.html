@@ -1,10 +1,13 @@
 {{ define "main"}}
 <main class="prose min-w-full text-center">
-       <h1 class="text-5xl mt-12">404 Not Found</h1>
-       We can't find that page.
-       <div class="mx-auto w-24 h-1 my-12 bg-gradient-to-r from-red-600 to-red-400 rounded-full"></div>
-       <a class="rounded-md bg-gradient-to-b from-gray-600 to-black hover:from-gray-500 hover:to-black px-5 py-2.5 text-sm font-medium text-white shadow hover:shadow-2xl" href="/">
-              Go Back Home
+  <div class="grid h-screen px-4 bg-white place-content-center">
+    <div class="text-center">
+       <h1 class="font-black text-gray-200 text-9xl">404</h1>          
+       <p class="mt-4 text-gray-500">{{ T "404_cantfind"}}</p>          
+       <a href="/" class="inline-block px-5 py-3 mt-6 text-sm font-medium text-white bg-indigo-600 rounded hover:bg-indigo-700 focus:outline-none focus:ring">
+         {{ T "404_home"}}
        </a>
+    </div>
+  </div>
 </main>
 {{ end }}

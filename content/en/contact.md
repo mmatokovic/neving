@@ -3,7 +3,7 @@ title: "Contact"
 slug: contact
 draft: false
 description: Home
-identifier: about
+layout: "contact"
 menu: main
 weight: 60
 ---
