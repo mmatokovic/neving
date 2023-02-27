@@ -7,7 +7,7 @@ module.exports = {
         'width': 'width',
       },
       grayscale: {
-        50: '50%',
+        80: '80%',
       }
     },
     keyframes: {
