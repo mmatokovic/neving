@@ -3,6 +3,7 @@ title: "O nama"
 slug: o-nama
 draft: false
 description: Home
+identifier: about
 layout: "about"
 menu: main
 weight: 10

@@ -3,6 +3,7 @@ title: "About Us"
 slug: about
 draft: false
 description: Home
+identifier: about
 layout: "about"
 menu: main
 weight: 10

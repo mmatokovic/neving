@@ -12,14 +12,17 @@
         excepturi dolores.
       </p>
       <div class="mt-4 sm:mt-8">
-        <a href="{{ relLangURL "contact" }}" class="inline-block rounded-md bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400">
+        {{ with .Site.GetPage "page" "about" }}
+        <a href="{{ .Permalink }}" class="inline-block rounded-md bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400">
+        {{ end }}
         <span>{{ i18n "contact" }}</span>
         </a>
       </div>
     </div>
   </div>
 </section>
-<div class="hidden sm:block flex inline-block -mt-20 flex items-center bg-gray-100 container  mx-auto max-w-screen-xl" id="blueprint">
+<div class="hidden sm:block max-w-screen-xl px-4 m:px-6 lg:px-8 container mx-auto sm:block flex inline-block -mt-20" id="blueprint">
+  <img src="" alt="">
   <div class="mt-9 sm:mt-12">
     <dl class="grid grid-cols-1 gap-4 sm:grid-cols-3">
       <div class="flex flex-col rounded-lg px-4 py-8 text-center">
@@ -74,7 +77,18 @@
 <section class="bg-white text-gray-600" x-data="{ shown: false }" x-intersect="shown = true">
   <div class="max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 container mx-auto" x-show="shown" x-transition>
     <div class="max-w-xl">
-      <h2 class="text-3xl font-bold sm:text-4xl">What makes us special</h2>
+      <header class="max-w-xl text-gray-600">
+        {{ with .Site.GetPage "page" "services" }}
+        <a href="{{ .Permalink }}" class="group">
+          <h2 class="text-3xl font-bold sm:text-4xl group-hover:underline decoration-indigo-700 underline-offset-2">
+            {{ T "services"}}
+            <svg class="h-5 w-5 inline-block transition transform group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </h2>
+        </a>
+        {{end}}
+      </header>
       <p class="mt-4 text-gray-300">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
         dolores iure fugit totam iste obcaecati. Consequatur ipsa quod ipsum
@@ -109,14 +123,16 @@
 <section>
   <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
     <header class="max-w-xl text-gray-600">
-      <h2 class="text-3xl font-bold sm:text-4xl">
-        Projekti
-      </h2>
-      <p class="mt-4 text-gray-300">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
-        praesentium cumque iure dicta incidunt est ipsam, officia dolor fugit
-        natus?
-      </p>
+      {{ with .Site.GetPage "page" "references" }}
+      <a href="{{ .Permalink }}" class="group">
+        <h2 class="text-3xl font-bold sm:text-4xl group-hover:underline decoration-indigo-700 underline-offset-2">
+          {{ T "references"}}
+          <svg class="h-5 w-5 inline-block transition transform group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </h2>
+      </a>
+      {{ end }}
     </header>
     <ul class="grid grid-cols-1 gap-4 mt-8 lg:grid-cols-3">
       <li>
@@ -158,9 +174,16 @@
 <section class="text-gray-600 body-font">
   <div class="max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8 container mx-auto">
     <header class="max-w-xl text-gray-600">
-      <h2 class="text-3xl font-bold sm:text-4xl">
-        O nama
-      </h2>
+      {{ with .Site.GetPage "page" "about" }}
+      <a href="{{ .Permalink }}" class="group">
+        <h2 class="text-3xl font-bold sm:text-4xl group-hover:underline decoration-indigo-700 underline-offset-2">
+          {{ T "about"}}
+          <svg class="h-5 w-5 inline-block transition transform group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </h2>
+      </a>
+      {{ end }}
       <p class="mt-4 text-gray-300">
         Meggings portland fingerstache lyft, post-ironic fixie man bun banh mi umami everyday carry hexagon locavore direct trade art party. Locavore small batch listicle gastropub farm-to-table lumbersexual salvia messenger bag.
       </p>
@@ -169,7 +192,7 @@
       {{ $nama := resources.Get "images/saad-salim-PqRvLsjD_TU-unsplash.jpg" }}
       <div class="rounded-lg h-64 overflow-hidden relative">
         <img alt="content" class="object-cover object-center h-full w-full" src="{{ $nama.RelPermalink }}">
-          <button class="absolute mt-4 sm:mt-8 top-20 left-10 bg-indigo-600 px-12 py-3 font-medium text-white rounded hover:bg-indigo-700">Više</button>
+          <!--<button class="absolute mt-4 sm:mt-8 top-20 left-10 bg-indigo-600 px-12 py-3 font-medium text-white rounded hover:bg-indigo-700">Više</button>-->
       </div>
     </div>
   </div>
