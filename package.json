@@ -9,7 +9,7 @@
   "scripts": {
     "watch": "npx tailwindcss -i ./assets/scss/main.scss -o ./assets/scss/main.css --jit -w",
     "hugo": "hugo server --forceSyncStatic --printI18nWarnings",
-    "start": "hugo server",
+    "start": "concurrently \"npm run watch\" \"npm run hugo\"",
     "deploy": "hugo --minify"
   },
   "devDependencies": {
@@ -20,6 +20,7 @@
     "alpinejs": "^3.11.1",
     "autoprefixer": "^10.4.13",
     "autotrack": "^2.4.1",
+    "concurrently": "^7.6.0",
     "instant.page": "^5.1.1",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
