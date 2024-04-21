@@ -1,0 +1,67 @@
+baseURL = 'https://neving.hr/'
+languageCode = 'hr'
+title = 'Neving'
+defaultContentLanguage = 'hr'
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+
+[services]
+  [services.googleAnalytics]
+    ID = ''
+
+[languages]
+  [languages.hr]
+    languageCode = 'hr'
+    languageName = 'Hrvatski'
+    contentDir = 'content/hr'
+    weight = 1
+  [languages.en]
+    languageCode = 'en'
+    languageName = 'English'
+    contentDir = 'content/en'
+    weight = 2
+
+[params]
+  Description = ""
+  logo = "favicon.png"
+  copyright = "Apache-2.0"
+  copyright-year = '2024'
+  dateFormat = "02.01.2006."
+  [params.author]
+    email = 'jsmith@example.org'
+    name = "Petar Nevistić"
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min      = "0.116.1"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "hugo_stats.json"
+    target = "assets/watching/hugo_stats.json"
+  [[module.mounts]]
+    source = 'static/images'
+    target = 'assets/images'
+
+[build]
+  writeStats = true
+  [[build.cachebusters]]
+    source = "assets/watching/hugo_stats\\.json"
+    target = "styles\\.css"
+  [[build.cachebusters]]
+    source = "(postcss|tailwind)\\.config\\.js"
+    target = "css"
+  [[build.cachebusters]]
+    source = "assets/.*\\.(js|ts|jsx|tsx)"
+    target = "js"
+  [[build.cachebusters]]
+    source = "assets/.*\\.(.*)$"
+    target = "$1"

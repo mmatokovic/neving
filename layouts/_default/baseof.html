@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+	{{ partial "head" . }}
+	<body class="bg-zinc-100 dark:bg-gray-800">
+		{{ partial "header" . }}
+		{{ block "main" . }}{{ end }}
+		{{ partial "footer" . }}
+	</body>
+</html>

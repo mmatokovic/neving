@@ -1,0 +1,16 @@
+{
+  "name": "neving",
+  "version": "1.0.0",
+  "description": "Repo for Neving site",
+  "author": "Mislav Matoković <mislav.mat@hotmail.com>",
+  "license": "Apache-2.0",
+  "repository": "github:mmatokovic/venushotyoga",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.12",
+    "alpinejs": "^3.13.8",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.3"
+  }
+}

@@ -1,0 +1,9 @@
+<head>
+  {{ printf "<!--Hugo Build Date: %s-->" hugo.BuildDate | safeHTML }}
+  {{ printf "<!--Hugo Commit Hash: %s-->" hugo.CommitHash | safeHTML }}
+  {{ hugo.Generator -}}
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}"/>
+  <meta name="author" content="{{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.author.name }}{{ end }}"/>
+  {{ partial "sections/site_schema.html" . -}}
+  <title>{{- if not .IsHome }}{{ .Title }} | {{ end -}}{{ .Site.Title }}</title>
+</head>
