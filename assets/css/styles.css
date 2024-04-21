@@ -17,4 +17,10 @@
   details > summary::-webkit-details-marker {
     display: none;
   }
+  body.overflow {
+    overflow: hidden;
+  }
+  [x-cloak] { 
+    display: none !important;
+ }
 }
