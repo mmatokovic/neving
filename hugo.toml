@@ -23,14 +23,13 @@ enableEmoji = true
     weight = 2
 
 [params]
-  Description = ""
+  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum ligula a mauris laoreet, interdum volutpat magna sollicitudin."
   logo = "favicon.png"
   copyright = "Apache-2.0"
-  copyright-year = '2024'
   dateFormat = "02.01.2006."
   [params.author]
-    email = 'jsmith@example.org'
-    name = "Petar Nevistić"
+    email = 'mislav.mat@hotmail.com'
+    name = "Mislav Matoković"
 
 [sitemap]
   changefreq = "monthly"

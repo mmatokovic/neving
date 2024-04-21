@@ -1,9 +1,27 @@
 <head>
-  {{ printf "<!--Hugo Build Date: %s-->" hugo.BuildDate | safeHTML }}
-  {{ printf "<!--Hugo Commit Hash: %s-->" hugo.CommitHash | safeHTML }}
+  {{ partial "sections/site_schema.html" . }}
   {{ hugo.Generator -}}
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}"/>
-  <meta name="author" content="{{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.author.name }}{{ end }}"/>
-  {{ partial "sections/site_schema.html" . -}}
-  <title>{{- if not .IsHome }}{{ .Title }} | {{ end -}}{{ .Site.Title }}</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}" />
+  <meta name="author" content="{{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.author.name }} <{{ .Site.Params.author.email }}>{{ end }}" />
+  {{ if isset .Params "keywords" }}
+  <meta name="keywords" content="{{ with .Params.keywords }}{{ delimit . ", " }}{{ end }}" />
+  {{ end -}}
+  {{ template "_internal/schema.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+  {{ template "_internal/opengraph.html" . }}
+  {{ if ne .Site.Params.googleAnalytics "" }}
+    {{ template "_internal/google_analytics.html" . }}
+  {{ end }}
+  {{ $options := dict "inlineImports" true }}
+  {{ $styles := resources.Get "css/styles.css" }}
+  {{ $styles = $styles | resources.PostCSS $options }}
+  {{ if hugo.IsProduction }}
+    {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
+  {{ end }}
+  <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+  <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
 </head>

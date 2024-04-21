@@ -1,4 +1,4 @@
-## Neving
+# Neving - website
 
 The Neving website built with [Tailwind](https://tailwindcss.com/) and [Hugo](https://gohugo.io/) hosted on [cloudflare](https://www.cloudflare.com/) email at [SendGrid](https://sendgrid.com/) for Neving d.o.o.
 
@@ -8,7 +8,9 @@ The Neving website built with [Tailwind](https://tailwindcss.com/) and [Hugo](ht
 * The `dev` branch is where we store changes that are related to the next release.
 
 ## License
+
 [Apache License 2.0](LICENSE)
 
 ## Author Information
+
 [Mislav Matoković](https://github.com/mmatokovic)
