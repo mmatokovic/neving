@@ -1,6 +1,10 @@
 # Neving - website
 
-The Neving website built with [Tailwind](https://tailwindcss.com/) and [Hugo](https://gohugo.io/) hosted on [cloudflare](https://www.cloudflare.com/) email at [SendGrid](https://sendgrid.com/) for Neving d.o.o.
+The Neving website built with [Tailwind](https://tailwindcss.com/) and [Hugo](https://gohugo.io/) hosted on [cloudflare](https://www.cloudflare.com/) for Neving d.o.o.
+
+```Bash
+hugo server --disableFastRender --ignoreCache --noHTTPCache --buildDrafts
+```
 
 ## Branches
 

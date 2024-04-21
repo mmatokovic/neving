@@ -34,7 +34,14 @@ enableEmoji = true
 [sitemap]
   changefreq = "monthly"
   filename = "sitemap.xml"
-  priority = 0.5
+
+[frontmatter]
+  date = ["date", "publishDate", "lastmod"]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
 
 [module]
   [module.hugoVersion]
@@ -43,6 +50,9 @@ enableEmoji = true
   [[module.mounts]]
     source = "assets"
     target = "assets"
+  [[module.mounts]]
+    source = "node_modules/alpinejs/dist"
+    target = "assets/alpinejs"
   [[module.mounts]]
     source = "hugo_stats.json"
     target = "assets/watching/hugo_stats.json"

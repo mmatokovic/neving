@@ -5,7 +5,6 @@
 @layer base {
   html {
     -webkit-tap-highlight-color: transparent;
-    font-family: "Quicksand", serif;
   }
   /* Improve Page speed */
   /* https://css-tricks.com/almanac/properties/c/content-visibility/ */

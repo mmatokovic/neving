@@ -1,7 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-	content: ['./hugo_stats.json'],
+	content: [
+    './hugo_stats.json',
+    './assets/css/*.css'
+  ],
 	theme: {
     extend: {},
   },
