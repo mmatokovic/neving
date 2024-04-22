@@ -1,2 +1,32 @@
 [wordCount]
-other = "{{ .WordCount }} riječi"
+  other = "{{ .WordCount }} riječi"
+
+[contact]
+  other = 'kontaktirajte nas'
+
+[contact_company_information]
+  other = 'Kontakt podaci'
+
+[contact_company_data]
+  other = 'Matični podaci tvrtke'
+
+[contact_capital]
+  other = 'Temeljni kapital'
+
+[contact_vat]
+  other = 'OIB'
+
+[contact_name]
+  other = 'Ime'
+
+[contact_email]
+  other = 'Email adresa'
+
+[contact_phone]
+  other = 'Broj telefona'
+
+[contact_message]
+  other = 'Poruka'
+
+[contact_enquiry]
+  other = 'Pošaljite Upit'

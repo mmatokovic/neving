@@ -1,9 +1,10 @@
 ---
-title: O nama
+title: O Nama
 slug: o-nama
 draft: false
-description: Home
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 menu: main
+featured_image: "/images/featured/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg"
 ---
 
 Firma Neving osnovana je 1993. godine i od tada se bavi građevinskim projektima različitih vrsta i obujma, od manjih privatnih kuća do velikih stambenih i poslovnih objekata. Svojim klijentima pružamo kvalitetne usluge koje uključuju projektiranje, izgradnju, adaptaciju, renovaciju, uređenje interijera i eksterijera te druge srodne usluge.
@@ -16,10 +17,10 @@ Naši projekti su prepoznati po inovativnosti, funkcionalnosti i estetici te smo
 
 Ako planirate graditi, adaptirati ili renovirati, obratite nam se s povjerenjem. Naš stručni tim će se pobrinuti da Vaš projekt bude realiziran u najkraćem mogućem roku, s najvišom kvalitetom i po konkurentnim cijenama. Kontaktirajte nas i uvjerite se u našu kvalitetu!
 
-### Vizija
+## Vizija
 
 Naša vizija je biti vodeća građevinska tvrtka u Hrvatskoj i regiji, prepoznata po visokoj kvaliteti usluga, inovativnosti, stručnosti i pouzdanosti. Želimo biti partneri našim klijentima u ostvarenju njihovih želja i potreba u građevinarstvu.
 
-### Misija
+## Misija
 
 Naša misija je pružiti visokokvalitetne i pouzdane građevinske usluge našim klijentima, uz poštovanje propisa, standarda i zaštite okoliša. Strastveni smo u ostvarivanju kreativnih i inovativnih rješenja, te se kontinuirano razvijamo i usavršavamo kako bismo zadovoljili potrebe naših klijenata.

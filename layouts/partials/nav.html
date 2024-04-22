@@ -2,20 +2,22 @@
   <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
     <div x-data="{ open: false }" class="flex h-16 items-center justify-between">
       <div class="flex-1 md:flex md:items-center md:gap-12">
-        <a href="/" class="flex transition duration-1000 ease-in-out group">
-          <img src="/images/logo.jpg" class="transition-opacity h-9 w-9 group-hover:opacity-50 group-focus:opacity-70" alt="{{ .Site.Title }} Logo" />
-          <div class="mt-1 ml-3 text-xl font-medium tracking-tight capitalize transition-colors group-hover:text-gray-400/60">
+        <a href="{{ .Site.BaseURL | relLangURL }}" class="flex group">
+          {{ with resources.Get "images/global/logo.jpg" }}
+          <img src="{{ .Permalink }}" class="h-9 w-9 group-hover:opacity-50" alt="logo" />
+          {{ end }}
+          <span class="mt-1 ml-3 text-xl font-black tracking-tight uppercase text-blue-800 group-hover:text-gray-400/60">
             {{ .Site.Title }}
-          </div>
+          </span>
         </a>
       </div>
       <div class="md:flex md:items-center md:gap-12">
         <nav class="hidden md:block">
           <ul class="flex items-center gap-6 text-base font-medium leading-6 text-black">
-          {{ range site.Menus.main }}
+          {{ range .Site.Menus.main }}
             <a class="hover:text-gray-500/75 relative font-medium text-black before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-gradient-to-r from-indigo-300 to-indigo-600 before:transition hover:before:scale-100 {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}} text-gray-500/75{{ end }}"
               href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
-              {{ .Name }}
+              {{ .Pre }}<span>{{ i18n .Identifier | default .Name}}</span>{{ .Post }}
             </a>
           {{ end }}
           </ul>

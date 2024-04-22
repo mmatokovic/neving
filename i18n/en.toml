@@ -1,2 +1,32 @@
 [wordCount]
-other = "{{ .WordCount }} words"
+  other = "{{ .WordCount }} words"
+
+[contact]
+  other = 'Contact us'
+
+[contact_company_information]
+  other = 'Company Information'
+
+[contact_company_data]
+  other = 'Company Data'
+
+[contact_capital]
+  other = 'Share capital'
+
+[contact_vat]
+  other = 'VAT ID'
+
+[contact_name]
+  other = 'Name'
+
+[contact_email]
+  other = 'Email'
+
+[contact_phone]
+  other = 'Phone'
+
+[contact_message]
+  other = 'Message'
+
+[contact_enquiry]
+  other = 'Send Enquiry'

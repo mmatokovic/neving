@@ -1,7 +1,6 @@
 # Neving - website
 
-The Neving website built with [Tailwind](https://tailwindcss.com/) and [Hugo](https://gohugo.io/) hosted on [cloudflare](https://www.cloudflare.com/) for Neving d.o.o.
-[text](https://unsplash.com/s/photos/construction?license=free), objave
+The Neving website built with [Tailwind](https://tailwindcss.com/) and [Hugo](https://gohugo.io/) hosted on [Netlify](https://www.netlify.com/).
 
 ```Bash
 hugo server --disableFastRender --ignoreCache --noHTTPCache --buildDrafts
@@ -10,7 +9,9 @@ hugo server --disableFastRender --ignoreCache --noHTTPCache --buildDrafts
 ## Branches
 
 * The `main` branch is where the site is automatically built from, and is the place to put changes relevant to the current version.
+* The `stage` branch is where we store changes that are related to the next release.
 * The `dev` branch is where we store changes that are related to the next release.
+* The `feature/` branch used for work on new feature.
 
 ## License
 

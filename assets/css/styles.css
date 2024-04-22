@@ -20,7 +20,59 @@
   body.overflow {
     overflow: hidden;
   }
+  body{
+    font-family: Helvetica, sans-serif;
+  }
   [x-cloak] { 
     display: none !important;
  }
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/Helvetica.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Helvetica Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/Helvetica-Oblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Helvetica Compressed';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/helvetica-compressed-5871d14b6903a.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Helvetica Rounded Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/helvetica-rounded-bold-5871d05ead8de.woff') format('woff');
+}
+  
+@font-face {
+  font-family: 'Helvetica Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/Helvetica-Bold.woff') format('woff');
+}
+  
+@font-face {
+  font-family: 'Helvetica Bold Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/Helvetica-BoldOblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Helvetica Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/helvetica-light-587ebe5a59211.woff') format('woff');
 }

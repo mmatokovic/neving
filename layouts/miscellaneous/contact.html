@@ -1,0 +1,65 @@
+{{ define "main" }}
+<main class="bg-gray-100">
+  <section class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
+      <div class="lg:col-span-2 lg:py-12">
+        <h1 class="max-w-xl text-2xl font-bold">
+          {{ T "contact_company_information"}}:
+        </h1>
+        <div class="mt-8">
+          <address>
+            {{ site.Data.links.adresa }}
+          </address>
+          <address>
+            <p>Neving d.o.o.</p>
+            <a class="text-blue-600 hover:text-blue-400" href="mailto:{{ site.Data.links.mail }}">
+              {{ site.Data.links.mail }}
+            </a><br>
+            <a href="tel:{{ site.Data.links.tel }}" class="text-blue-600 hover:text-blue-400">
+              {{ site.Data.links.tel }}
+            </a>
+          </address>
+          <br>
+          <h1 class="max-w-xl text-2xl font-bold">
+            {{ T "contact_company_data"}}:
+          </h1>
+          <div class="mt-8">
+            <address>
+              <b>{{ T "contact_vat"}}:</b> {{ site.Data.links.oib }}<br>
+              <b>IBAN:</b> {{ site.Data.links.iban }}<br>
+              <b>{{ T "contact_capital"}}:</b> {{ site.Data.links.kapital }}
+            </address>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+        <form name="contact" action="https://formsubmit.co/mislav.mat@hotmail.com" method="POST" class="space-y-4">
+          <div>
+            <label class="sr-only" for="name">{{ T "contact_name"}}</label>
+            <input class="w-full rounded-lg border-2 border-gray-200 p-3 text-sm" placeholder="{{ T "contact_name" }}" type="text" id="name"/>
+          </div>
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <label class="sr-only" for="email">{{ T "contact_email"}}</label>
+              <input class="w-full rounded-lg border-2 border-gray-200 p-3 text-sm" placeholder="{{ T "contact_email"}}" type="email" id="email"/>
+            </div>
+            <div>
+              <label class="sr-only" for="phone">{{ T "contact_phone"}}</label>
+              <input class="w-full rounded-lg border-2 border-gray-200 p-3 text-sm" placeholder="{{ T "contact_phone"}}" type="tel" id="phone"/>
+            </div>
+          </div>
+          <div>
+            <label class="sr-only" for="message">{{ T "contact_message"}}</label>
+            <textarea class="w-full rounded-lg border-2 border-gray-200 p-3 text-sm" placeholder="{{ T "contact_message"}}" rows="8" id="message"></textarea>
+          </div>
+          <div class="mt-4">
+            <button type="submit" class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto">
+              {{ T "contact_enquiry"}}
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}

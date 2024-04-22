@@ -2,6 +2,7 @@ baseURL = 'https://neving.netlify.app/'
 languageCode = 'hr'
 title = 'Neving'
 defaultContentLanguage = 'hr'
+paginate = 3
 enableRobotsTXT = true
 enableGitInfo = true
 enableEmoji = true
@@ -15,38 +16,62 @@ enableEmoji = true
     languageCode = 'hr'
     languageName = 'Hrvatski'
     contentDir = 'content/hr'
-    weight = 1
   [languages.en]
     languageCode = 'en'
     languageName = 'English'
     contentDir = 'content/en'
-    weight = 2
 
 [params]
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum ligula a mauris laoreet, interdum volutpat magna sollicitudin."
-  logo = "favicon.png"
-  copyright = "Apache-2.0"
+  logo = "favicon.ico"
+  licence = "Apache-2.0"
+  copyrightYear = '2023'
   dateFormat = "02.01.2006."
   [params.author]
-    email = 'mislav.mat@hotmail.com'
     name = "Mislav Matoković"
-
+    email = 'mislav.mat@hotmail.com'
+    
 [sitemap]
   changefreq = "monthly"
   filename = "sitemap.xml"
 
 [frontmatter]
-  date = ["date", "publishDate", "lastmod"]
-  lastmod = ["lastmod", ":fileModTime", ":default"]
+  date = ['date', 'publishDate', 'pubdate', 'lastmod', 'modified']
+  expiryDate = ['expiryDate', 'unpublishdate']
+  lastmod = [':git', 'lastmod', 'modified', 'date', 'publishDate', 'pubdate']
+  publishDate = ['publishDate', 'pubdate', 'date']
 
 [taxonomies]
   category = 'categories'
   tag = 'tags'
 
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.youTube]
+    disable = false
+    privacyEnhanced = false
+
 [module]
   [module.hugoVersion]
-    extended = false
-    min      = "0.116.1"
+    extended = true
+    min = '0.112.0'
   [[module.mounts]]
     source = "assets"
     target = "assets"
