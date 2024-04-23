@@ -20,16 +20,4 @@ params:
       - text: Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum.
           Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat
           donec laoreet quam urna. Sollicitudin.
-      links:
-      - text: Meet our investors and advisors
-        url: "#"
-      logos:
-      - identifier: a
-        image: "images/global/sample-logo.svg"
-        alt: "a"
-      - identifier: b
-      - identifier: c
-      - identifier: d
-      - identifier: e
-      - identifier: f
 ---
