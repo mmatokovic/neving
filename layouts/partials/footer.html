@@ -1,5 +1,75 @@
-<footer>
+<footer class="bg-white">
+  <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div>
+        <div class="flex-1 md:flex md:items-center md:gap-1">
+          {{ with resources.Get "images/global/logo.jpg" }}
+          <img src="{{ .Permalink }}" class="h-9 w-9 group-hover:opacity-50" alt="logo" />
+          {{ end }}
+          <span class="mt-1 ml-3 text-xl font-black tracking-tight uppercase text-blue-800 group-hover:text-gray-400/60">
+            {{ .Site.Title }}
+          </span>
+        </div>
+        <p class="mt-4 max-w-xs text-gray-500">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non cupiditate quae nam
+          molestias.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
+        <div>
+          <p class="font-medium text-gray-900">Contact Us</p>
+          <address class="mt-6 space-y-4 text-sm not-italic">
+            <p>
+              {{ site.Data.links.adresa }}
+            </p>
+            <a class="text-blue-600 hover:text-blue-400" href="mailto:{{ site.Data.links.mail }}">
+              {{ site.Data.links.mail }}
+            </a><br>
+            <a class="text-blue-600 hover:text-blue-400" href="tel:{{ site.Data.links.tel }}">
+              {{ site.Data.links.tel }}
+            </a>
+          </address>
+        </div>
+        <div>
+          <p class="font-medium text-gray-900">Company</p>
+          <ul class="mt-6 space-y-4 text-sm">
+            {{ range .Site.Menus.company }}
+            <li>
+              <a class="text-gray-700 transition hover:opacity-75" href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
+              {{ .Pre }}<span>{{ i18n .Identifier | default .Name}}</span>{{ .Post }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        <div>
+          <p class="font-medium text-gray-900">Expertise</p>
+          <ul class="mt-6 space-y-4 text-sm">
+            {{ range .Site.Menus.main }}
+            <li>
+              <a class="text-gray-700 transition hover:opacity-75" href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
+              {{ .Pre }}<span>{{ i18n .Identifier | default .Name}}</span>{{ .Post }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        <div>
+          <p class="font-medium text-gray-900">Legal</p>
+          <ul class="mt-6 space-y-4 text-sm">
+            {{ range .Site.Menus.legal }}
+            <li>
+              <a class="text-gray-700 transition hover:opacity-75" href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
+              {{ .Pre }}<span>{{ i18n .Identifier | default .Name}}</span>{{ .Post }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="text-xs text-gray-500">&copy; {{ .Site.Params.copyrightYear }} Neving d.o.o. All rights reserved.</p>
+  </div>
   {{ $alpine := resources.Get "alpinejs/cdn.min.js" }}
-<script src="{{ $alpine.RelPermalink }}" defer></script>
-
+  <script src="{{ $alpine.RelPermalink }}" defer></script>
 </footer>

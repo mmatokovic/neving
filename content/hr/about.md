@@ -1,9 +1,12 @@
 ---
-title: O Nama
+title: O Neving
 slug: o-nama
 draft: false
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-menu: main
+menus:
+- main
+- company
+weight: 10
 featured_image: "/images/featured/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg"
 ---
 

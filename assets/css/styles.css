@@ -28,6 +28,21 @@
  }
 }
 
+.prose :where(h1):not(:where([class~="not-prose"] *)) {
+  color: white !important;
+}
+
+.prose :where(h3):not(:where([class~="not-prose"] *)) {
+  border-top: 1px solid #024a94;
+  border-right: 0 solid #024a94;
+  border-bottom: 0 solid #024a94;
+  border-left: 0 solid #024a94;
+  padding-top: 0.5em;
+  color: #024a94;
+  font-family: 'Helvetica Light', Arial, sans !important;
+  font-weight: 400 !important;
+}
+
 @font-face {
   font-family: 'Helvetica';
   font-style: normal;

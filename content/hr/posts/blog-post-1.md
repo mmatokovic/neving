@@ -1,18 +1,18 @@
 ---
-title: "News Post 1"
+title: "Blog Post 1"
 date: 2024-04-21T08:11:00+02:00
 draft: false
-featured_image: "/images/featured/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg"
+featured_image: "/images/featured/scott-blake-x-ghf9LjrVg-unsplash.jpg"
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero.
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero. Vestibulum vel convallis felis. Ut finibus lorem vestibulum lobortis rhoncus.
-categories: [News]
-tags: [News]
+categories: [Posts]
+tags: [Blogs]
 ---
 
 # h1 Heading :blush:
 ## h2 Heading
 ### h3 Heading
-#### h4 Heading
+#### h4 Heading 
 ##### h5 Heading
 ###### h6 Heading
 

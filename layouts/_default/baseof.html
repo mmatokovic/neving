@@ -3,6 +3,7 @@
 	{{ partial "head" . }}
 	<body class="bg-zinc-100">
 		{{ partial "nav" . }}
+		{{if not .IsHome}}{{ partial "sections/breadcrumbs" . }}{{end}}
 		{{ block "main" . }}{{ end }}
 		{{ partial "footer" . }}
 	</body>

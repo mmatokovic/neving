@@ -3,7 +3,10 @@ title: Reference
 slug: reference
 draft: false
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-menu: main
+menus: 
+- main
+- company
+weight: 30
 featured_image: "/images/featured/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg"
 ---
 Firma Neving osnovana je 1993. godine i od tada se bavi građevinskim projektima različitih vrsta i obujma, od manjih privatnih kuća do velikih stambenih i poslovnih objekata. Svojim klijentima pružamo kvalitetne usluge koje uključuju projektiranje, izgradnju, adaptaciju, renovaciju, uređenje interijera i eksterijera te druge srodne usluge.

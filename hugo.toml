@@ -16,16 +16,18 @@ enableEmoji = true
     languageCode = 'hr'
     languageName = 'Hrvatski'
     contentDir = 'content/hr'
+    weight = 1
   [languages.en]
     languageCode = 'en'
     languageName = 'English'
     contentDir = 'content/en'
+    weight = 2
 
 [params]
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum ligula a mauris laoreet, interdum volutpat magna sollicitudin."
   logo = "favicon.ico"
   licence = "Apache-2.0"
-  copyrightYear = '2023'
+  copyrightYear = '2024'
   dateFormat = "02.01.2006."
   [params.author]
     name = "Mislav Matoković"
