@@ -18,7 +18,14 @@
         </div>
       </div>
     </div>
-    <img alt="" src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" class="h-56 w-full object-cover sm:h-full"/>
+    {{ with resources.Get "images/pages/ricardo-gomez-angel-xIaCoCA7NIQ-unsplash.jpg" }}
+    {{ $small := (.Resize "400x webp q80").RelPermalink }}
+    {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+    {{ $large := (.Resize "900x webp q80").RelPermalink }}
+    {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+    <img src="{{ $featuredimage }}" srcset="{{- with $small -}}, {{.}} 400w{{- end -}} {{- with $medium -}}, {{.}} 550w{{- end -}} {{- with $large -}}, {{.}} 768w{{- end -}} {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
+          class="h-56 w-full object-cover sm:h-full" width="100%" height="{{ .Height }}" alt="{{ .Params.title }}" />
+    {{ end }}
   </section>
   <section class="relative my-4">
     <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
