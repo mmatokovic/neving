@@ -2,6 +2,10 @@
 
 The Neving website built with [Tailwind](https://tailwindcss.com/) and [Hugo](https://gohugo.io/) hosted on [Netlify](https://www.netlify.com/).
 
+## Installation
+
+Start the local development server
+
 ```Bash
 hugo server --disableFastRender --ignoreCache --noHTTPCache --buildDrafts
 ```

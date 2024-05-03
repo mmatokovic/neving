@@ -8,15 +8,27 @@ importers:
 
   .:
     devDependencies:
+      '@hotwired/turbo':
+        specifier: ^8.0.4
+        version: 8.0.4
+      '@tailwindcss/forms':
+        specifier: ^0.5.7
+        version: 0.5.7(tailwindcss@3.4.3)
       '@tailwindcss/typography':
         specifier: ^0.5.12
         version: 0.5.12(tailwindcss@3.4.3)
+      alpine-turbo-drive-adapter:
+        specifier: ^2.1.0
+        version: 2.1.0
       alpinejs:
         specifier: ^3.13.8
         version: 3.13.8
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.38)
+      instant.page:
+        specifier: ^5.2.0
+        version: 5.2.0
       postcss:
         specifier: ^8.4.38
         version: 8.4.38
@@ -32,6 +44,10 @@ packages:
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
+
+  '@hotwired/turbo@8.0.4':
+    resolution: {integrity: sha512-mlZEFUZrJnpfj+g/XeCWWuokvQyN68WvM78JM+0jfSFc98wegm259vCbC1zSllcspRwbgXK31ibehCy5PA78/Q==}
+    engines: {node: '>= 14'}
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -75,6 +91,11 @@ packages:
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
     engines: {node: '>=18'}
 
+  '@tailwindcss/forms@0.5.7':
+    resolution: {integrity: sha512-QE7X69iQI+ZXwldE+rzasvbJiyV/ju1FGHH0Qn2W3FKbuYtqp8LKcy6iSw79fVUT5/Vvf+0XgLCeYVG+UV6hOw==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
+
   '@tailwindcss/typography@0.5.12':
     resolution: {integrity: sha512-CNwpBpconcP7ppxmuq3qvaCxiRWnbhANpY/ruH4L5qs2GCiVDJXde/pjj2HWPV1+Q4G9+V/etrwUYopdcjAlyg==}
     peerDependencies:
@@ -85,6 +106,9 @@ packages:
 
   '@vue/shared@3.1.5':
     resolution: {integrity: sha512-oJ4F3TnvpXaQwZJNF3ZK+kLPHKarDmJjJ6jyzVNDKH9md1dptjC7lWR//jrGuLdek/U6iltWxqAnYOu8gCiOvA==}
+
+  alpine-turbo-drive-adapter@2.1.0:
+    resolution: {integrity: sha512-Lehm3XM6JsQEcNugdtDkOMJUp1zEKmpJ/zMHxL/h6Korb5xZkMbacINRaFlUZGQtSP0Om4ZcYLERklLEFGczYQ==}
 
   alpinejs@3.13.8:
     resolution: {integrity: sha512-XolbBJryCndomtaHd/KHQjQeD/L72FJxy/YhLLFD4Lr7zzGcpcbg+UgXteMR2pYg1KhRUr6V4O3GfN1zJAmRWw==}
@@ -268,6 +292,9 @@ packages:
     resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==}
     engines: {node: '>= 4'}
 
+  instant.page@5.2.0:
+    resolution: {integrity: sha512-DUSwWyoHFOQnmEwJtg9vzDx8Ef8uNNvTxTmHjd0vN9/XEIb5EQkm/itpZMypoH3dJLJvtkrD97WOCKuMqDdMHQ==}
+
   is-binary-path@2.1.0:
     resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
     engines: {node: '>=8'}
@@ -336,6 +363,10 @@ packages:
   micromatch@4.0.5:
     resolution: {integrity: sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==}
     engines: {node: '>=8.6'}
+
+  mini-svg-data-uri@1.4.4:
+    resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
+    hasBin: true
 
   minimatch@9.0.4:
     resolution: {integrity: sha512-KqWh+VchfxcMNRAJjj2tnsSJdNbHsVgnkBhTNrW7AjVo6OvLtxw8zfT9oLw1JSohlFzJ8jCoTgaoXvJ+kHt6fw==}
@@ -619,6 +650,8 @@ snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
 
+  '@hotwired/turbo@8.0.4': {}
+
   '@isaacs/cliui@8.0.2':
     dependencies:
       string-width: 5.1.2
@@ -662,6 +695,11 @@ snapshots:
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
+  '@tailwindcss/forms@0.5.7(tailwindcss@3.4.3)':
+    dependencies:
+      mini-svg-data-uri: 1.4.4
+      tailwindcss: 3.4.3
+
   '@tailwindcss/typography@0.5.12(tailwindcss@3.4.3)':
     dependencies:
       lodash.castarray: 4.4.0
@@ -675,6 +713,8 @@ snapshots:
       '@vue/shared': 3.1.5
 
   '@vue/shared@3.1.5': {}
+
+  alpine-turbo-drive-adapter@2.1.0: {}
 
   alpinejs@3.13.8:
     dependencies:
@@ -853,6 +893,8 @@ snapshots:
 
   ignore@5.3.1: {}
 
+  instant.page@5.2.0: {}
+
   is-binary-path@2.1.0:
     dependencies:
       binary-extensions: 2.3.0
@@ -907,6 +949,8 @@ snapshots:
     dependencies:
       braces: 3.0.2
       picomatch: 2.3.1
+
+  mini-svg-data-uri@1.4.4: {}
 
   minimatch@9.0.4:
     dependencies:

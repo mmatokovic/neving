@@ -1,0 +1,4 @@
+{{ $turbo := resources.Get "jslibs/turbo/turbo.es2017-esm.js" }}
+{{- $js := $turbo | minify | fingerprint -}}
+
+<script type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>

@@ -22,6 +22,8 @@
   {{ if hugo.IsProduction }}
     {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
   {{ end }}
+  {{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
+  {{ partialCached "jslibs/turbo/script-src.html" "-" }}
   <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
   <link rel="icon" href="/favicon.ico">
   <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>

@@ -1,0 +1,5 @@
+{{ $alpine := resources.Get "jslibs/alpinejs/cdn.min.js" }}
+{{ $jsTurbolinksAdapter := resources.Get "jslibs/alpinejs-turbolinks/alpine-turbo-drive-adapter.js" -}}
+{{- $js := slice $jsTurbolinksAdapter $alpine | resources.Concat "jslibs/alpinejs/alpine.js" | minify | fingerprint -}}
+
+<script type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>

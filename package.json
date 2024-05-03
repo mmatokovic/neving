@@ -6,9 +6,13 @@
   "license": "Apache-2.0",
   "repository": "github:mmatokovic/neving",
   "devDependencies": {
+    "@hotwired/turbo": "^8.0.4",
+    "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.12",
+    "alpine-turbo-drive-adapter": "^2.1.0",
     "alpinejs": "^3.13.8",
     "autoprefixer": "^10.4.19",
+    "instant.page": "^5.2.0",
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
     "tailwindcss": "^3.4.3"

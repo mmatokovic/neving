@@ -1,0 +1,4 @@
+{{- $instantpage := resources.Get "jslibs/instantpage/instantpage.js" | js.Build -}}
+{{ $js := $instantpage | minify | fingerprint }}
+
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>

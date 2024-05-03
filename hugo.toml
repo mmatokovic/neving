@@ -17,11 +17,23 @@ enableEmoji = true
     languageName = 'Hrvatski'
     contentDir = 'content/hr'
     weight = 1
+    [languages.hr.menus]
+      [[languages.hr.menus.main]]
+        name = 'Objave'
+        pageRef = '/posts'
+        identifier = 'posts'
+        weight = 10
   [languages.en]
     languageCode = 'en'
     languageName = 'English'
     contentDir = 'content/en'
     weight = 2
+    [languages.en.menus]
+      [[languages.hr.menus.main]]
+        name = 'Posts'
+        pageRef = '/posts'
+        identifier = 'posts'
+        weight = 10
 
 [params]
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum ligula a mauris laoreet, interdum volutpat magna sollicitudin."
@@ -78,14 +90,23 @@ enableEmoji = true
     source = "assets"
     target = "assets"
   [[module.mounts]]
-    source = "node_modules/alpinejs/dist"
-    target = "assets/alpinejs"
-  [[module.mounts]]
     source = "hugo_stats.json"
     target = "assets/watching/hugo_stats.json"
   [[module.mounts]]
     source = 'static/images'
     target = 'assets/images'
+  [[module.mounts]]
+    source = "node_modules/alpinejs/dist"
+    target = "assets/jslibs/alpinejs"
+  [[module.mounts]]
+    source = "node_modules/alpine-turbo-drive-adapter/dist"
+    target = "assets/jslibs/alpinejs-turbolinks"
+  [[module.mounts]]
+    source = "node_modules/@hotwired/turbo/dist"
+    target = "assets/jslibs/turbo"
+  [[module.mounts]]
+    source = "node_modules/instant.page"
+    target = "assets/jslibs/instantpage"
 
 [build]
   writeStats = true

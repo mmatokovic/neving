@@ -7,6 +7,9 @@ summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, od
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero. Vestibulum vel convallis felis. Ut finibus lorem vestibulum lobortis rhoncus.
 categories: [Posts]
 tags: [Blogs]
+menus: 
+  main:
+    parent: posts
 ---
 
 ## h2 Heading
