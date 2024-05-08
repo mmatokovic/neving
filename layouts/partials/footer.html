@@ -6,7 +6,7 @@
           {{ with resources.Get "images/global/logo.jpg" }}
           <img src="{{ .Permalink }}" class="h-9 w-9 group-hover:opacity-50" alt="logo" />
           {{ end }}
-          <span class="mt-1 ml-3 text-xl font-black tracking-tight uppercase text-blue-800 group-hover:text-gray-400/60">
+          <span class="mt-1 ml-3 text-xl font-black tracking-tight uppercase text-blue-500 group-hover:text-gray-400/60">
             {{ .Site.Title }}
           </span>
         </div>
@@ -35,7 +35,7 @@
           <ul class="mt-6 space-y-4 text-sm">
             {{ range .Site.Menus.company }}
             <li>
-              <a class="text-gray-700 transition hover:opacity-75" href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
+              <a class="text-gray-700 transition hover:text-blue-500" href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
               {{ .Pre }}<span>{{ i18n .Identifier | default .Name}}</span>{{ .Post }}
               </a>
             </li>
@@ -47,7 +47,7 @@
           <ul class="mt-6 space-y-4 text-sm">
             {{ range .Site.Menus.main }}
             <li>
-              <a class="text-gray-700 transition hover:opacity-75" href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
+              <a class="text-gray-700 transition hover:text-blue-500" href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
               {{ .Pre }}<span>{{ i18n .Identifier | default .Name}}</span>{{ .Post }}
               </a>
             </li>
@@ -59,7 +59,7 @@
           <ul class="mt-6 space-y-4 text-sm">
             {{ range .Site.Menus.legal }}
             <li>
-              <a class="text-gray-700 transition hover:opacity-75" href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
+              <a class="text-gray-700 transition hover:text-blue-500" href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
               {{ .Pre }}<span>{{ i18n .Identifier | default .Name}}</span>{{ .Post }}
               </a>
             </li>
