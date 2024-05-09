@@ -6,6 +6,5 @@
 		{{if not .IsHome}}{{ partial "sections/breadcrumbs" . }}{{end}}
 		{{ block "main" . }}{{ end }}
 		{{ partial "footer" . }}
-		{{ partialCached "jslibs/instantpage/script-src.html" "-" }}
 	</body>
 </html>
