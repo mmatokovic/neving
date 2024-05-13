@@ -1,5 +1,9 @@
 # Neving - website
 
+---
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d6cef03d-ee00-4ae5-9830-afce67e9f02f/deploy-status)](https://app.netlify.com/sites/neving/deploys)
+
 The Neving website built with [Tailwind](https://tailwindcss.com/) and [Hugo](https://gohugo.io/) hosted on [Netlify](https://www.netlify.com/).
 
 ## Installation
