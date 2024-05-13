@@ -2,7 +2,7 @@
 <main>
   <section class="overflow-hidden sm:grid sm:grid-cols-2 max-w-screen-xl px-4 pt-2 mx-auto lg:py-16 lg:px-6">
     <div class="p-8 md:p-12 lg:px-16 lg:py-24">
-      <div class="mx-auto max-w-xl text-center">
+      <div class="mx-auto max-w-xl text-left">
         <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit
         </h2>
@@ -11,11 +11,13 @@
           sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
           quisque ut interdum tincidunt duis.
         </p>
+        {{ with .Site.GetPage "contact" }}
         <div class="mt-4 md:mt-8">
-          <a href="{{ relLangURL "articles" }}" class="inline-block w-full rounded-lg bg-blue-800 px-5 py-3 font-medium text-white sm:w-auto hover:bg-blue-700">
+          <a href="{{ .RelPermalink }}" class="inline-block w-full rounded-lg bg-blue-800 px-5 py-3 font-medium text-white sm:w-auto hover:bg-blue-700">
             Get Started Today
           </a>
         </div>
+        {{ end }}
       </div>
     </div>
     {{ with resources.Get "images/pages/ricardo-gomez-angel-xIaCoCA7NIQ-unsplash.jpg" }}

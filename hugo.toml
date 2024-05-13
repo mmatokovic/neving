@@ -104,9 +104,6 @@ enableEmoji = true
   [[module.mounts]]
     source = "node_modules/@hotwired/turbo/dist"
     target = "assets/jslibs/turbo"
-  [[module.mounts]]
-    source = "node_modules/instant.page"
-    target = "assets/jslibs/instantpage"
 
 [build]
   writeStats = true

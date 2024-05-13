@@ -6,7 +6,6 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
 type: miscellaneous
 layout: contact
 menus:
-- main
 - company
 weight: 40
 ---

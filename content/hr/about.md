@@ -10,7 +10,9 @@ weight: 10
 featured_image: "/images/featured/jeriden-villegas-VLPUm5wP5Z0-unsplash.jpg"
 ---
 
-Firma Neving osnovana je 1993. godine i od tada se bavi građevinskim projektima različitih vrsta i obujma, od manjih privatnih kuća do velikih stambenih i poslovnih objekata. Svojim klijentima pružamo kvalitetne usluge koje uključuju projektiranje, izgradnju, adaptaciju, renovaciju, uređenje interijera i eksterijera te druge srodne usluge.
+## O nama
+
+Firma Neving osnovana je **1993**. godine i od tada se bavi građevinskim projektima različitih vrsta i obujma, od manjih privatnih kuća do velikih stambenih i poslovnih objekata. Svojim klijentima pružamo kvalitetne usluge koje uključuju projektiranje, izgradnju, adaptaciju, renovaciju, uređenje interijera i eksterijera te druge srodne usluge.
 
 Kroz godine rada, uspješno smo realizirali mnoge projekte i stekli veliko iskustvo u građevinarstvu. Naš tim stručnjaka sastoji se od arhitekata, inženjera i majstora različitih specijalnosti, koji su spremni pružiti najbolje rješenje za svaki pojedini projekt.
 
@@ -27,3 +29,12 @@ Naša vizija je biti vodeća građevinska tvrtka u Hrvatskoj i regiji, prepoznat
 ## Misija
 
 Naša misija je pružiti visokokvalitetne i pouzdane građevinske usluge našim klijentima, uz poštovanje propisa, standarda i zaštite okoliša. Strastveni smo u ostvarivanju kreativnih i inovativnih rješenja, te se kontinuirano razvijamo i usavršavamo kako bismo zadovoljili potrebe naših klijenata.
+
+## Certifikati
+
+Neving d.o.o.
+
+ISO 45001:2018
+ISO 50001:2018
+ISO 14001:2015
+ISO 9001:2015, ISO 9001:2015
