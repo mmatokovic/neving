@@ -21,18 +21,9 @@ Taxonomy
 
 ```Yaml
 [taxonomies]
-  category = 'categories'
-  tag = 'tags'
+  category = 'categories' #Rotor, Trgovački centar, Knjižnica, Stadion, Sportska dvorana, residential
+  tag = 'tags' #Keywords: Zagreb, Sisak, Vinkovci 
 ```
-
-Categories:
-
-* Careers, Refrences, Posts, Housing
-
-Tags (Keywords):
-
-* Lokacija: Zagreb, Sisak, Vinkovci
-* Tip Projekta: Rotor, Trgovački centar, Knjižnica, Stadion, Sportska dvorana
 
 ## Branches
 

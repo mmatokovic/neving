@@ -1,0 +1,30 @@
+{{ define "main" }}
+<main>
+  <h1 class="mb-4 text-4xl font-bold leading-none tracking-tight text-gray-900 md:text-5xl">
+    {{.Title}}
+  </h1>
+  <article>
+    {{ with .Content }}
+    <div class="max-w-2xl px-6 mx-auto mt-6 prose">
+      {{- . -}}
+    </div>
+    {{ end }}
+    {{ partial "sections/cards-template" . }}
+  </article>
+  <div class="max-w-xl mx-auto my-16">
+    {{ partial "sections/pagination" . }}
+  </div>
+  <section id="menu">
+    <ul>
+      {{ range $key, $taxonomy := .Site.Taxonomies.featured }}
+        <li>{{ $key }}</li>
+        <ul>
+          {{ range $taxonomy.Pages }}
+            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </ul>
+  </section>
+</main>
+{{ end }}

@@ -24,6 +24,9 @@
   {{ end }}
   {{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
   {{ partialCached "jslibs/turbo/script-src.html" "-" }}
+  {{ with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+  {{ end }}
   <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
   <link rel="icon" href="/favicon.ico">
   <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
