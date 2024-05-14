@@ -3,18 +3,18 @@
   <section class="mx-auto space-y-8 max-w-screen-xl px-2 sm:px-6 lg:px-8">
       <div class="container flex flex-row items-stretch justify-center w-full" x-data="{tab: 1}">
           <div class="flex flex-col justify-start w-1/4 space-y-4">
-              <a class="px-4 py-2 text-sm" :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 1, ' transform -translate-x-2': tab !== 1}" href="#" @click.prevent="tab = 1">
+              <button type="button" class="px-4 py-2 text-sm" :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 1, ' transform -translate-x-2': tab !== 1}" @click.prevent="tab = 1">
                   BATMAN & ROBIN
-              </a>
-              <a class="px-4 py-2 text-sm" :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 2, ' transform -translate-x-2': tab !== 2}" href="#" @click.prevent="tab = 2" @click.prevent="tab = 2">
+              </button>
+              <button type="button" class="px-4 py-2 text-sm" :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 2, ' transform -translate-x-2': tab !== 2}" @click.prevent="tab = 2" @click.prevent="tab = 2">
                   BATMAN V SUPERMAN: DAWN OF JUSTICE (2016)
-              </a>
-              <a class="px-4 py-2 text-sm" :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 3, ' transform -translate-x-2': tab !== 3}" href="#" @click.prevent="tab = 3" @click.prevent="tab = 3">
+              </button>
+              <button type="button" class="px-4 py-2 text-sm" :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 3, ' transform -translate-x-2': tab !== 3}" @click.prevent="tab = 3" @click.prevent="tab = 3">
                   BATMAN FOREVER (1995)
-              </a>
-              <a class="px-4 py-2 text-sm" :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 4, ' transform -translate-x-2': tab !== 4}" href="#" @click.prevent="tab = 4" @click.prevent="tab = 4">
+              </button>
+              <button type="button" class="px-4 py-2 text-sm" :class="{'z-20 border-l-2 transform translate-x-2 border-blue-500 font-bold': tab === 4, ' transform -translate-x-2': tab !== 4}" @click.prevent="tab = 4" @click.prevent="tab = 4">
                   BATMAN: THE KILLING JOKE (2016)
-              </a>
+              </button>
           </div>
           <div class="w-3/4 pl-6">
               <div class="space-y-6" x-show="tab === 1">
@@ -52,6 +52,7 @@
                       Learn more
                   </a>
               </div>
+              
               <div class="space-y-6" x-show="tab === 3">
                   <h3 class="text-xl font-bold leading-tight" x-show="tab === 3" x-transition:enter="transition duration-500 transform ease-in" x-transition:enter-start="opacity-0">
                       BATMAN: THE KILLING JOKE (2016)

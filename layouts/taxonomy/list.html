@@ -14,17 +14,5 @@
   <div class="max-w-xl mx-auto my-16">
     {{ partial "sections/pagination" . }}
   </div>
-  <section id="menu">
-    <ul>
-      {{ range $key, $taxonomy := .Site.Taxonomies.featured }}
-        <li>{{ $key }}</li>
-        <ul>
-          {{ range $taxonomy.Pages }}
-            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-          {{ end }}
-        </ul>
-      {{ end }}
-    </ul>
-  </section>
 </main>
 {{ end }}

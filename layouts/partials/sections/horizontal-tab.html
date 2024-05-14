@@ -2,19 +2,19 @@
   <h2 class="text-2xl font-bold">Tabs</h2>
   <ul class="flex border-b mt-6">
     <li class="-mb-px mr-1">
-      <a class="inline-block rounded-t py-2 px-4 font-semibold hover:text-blue-800" href="#" :class="{ 'bg-white text-blue-700 border-l border-t border-r': tab == 'tab1'}" @click.prevent="tab = 'tab1'">
+      <button type="button" class="inline-block rounded-t py-2 px-4 font-semibold hover:text-blue-800" :class="{ 'bg-white text-blue-700 border-l border-t border-r': tab == 'tab1'}" @click.prevent="tab = 'tab1'">
          Tab 1
-      </a>
+      </button>
     </li>
     <li class="-mb-px mr-1">
-      <a class="inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="#" :class="{ 'bg-white text-blue-700 border-l border-t border-r': tab == 'tab2'}" @click.prevent="tab = 'tab2'">
+      <button type="button" class="inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" :class="{ 'bg-white text-blue-700 border-l border-t border-r': tab == 'tab2'}" @click.prevent="tab = 'tab2'">
         Tab 2
-      </a>
+      </button>
     </li>
     <li class="-mb-px mr-1">
-      <a class="inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="#" :class="{ 'bg-white text-blue-700 border-l border-t border-r': tab == 'tab3'}" @click.prevent="tab = 'tab3'">
+      <button type="button" class="inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" :class="{ 'bg-white text-blue-700 border-l border-t border-r': tab == 'tab3'}" @click.prevent="tab = 'tab3'">
         Tab 3
-      </a>
+      </button>
     </li>
   </ul>
   <div class="content bg-white px-4 py-4 border-l border-r border-b pt-4">
