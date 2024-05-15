@@ -1,0 +1,26 @@
+<div class="mx-auto text-gray-900 max-w-7xl">
+  <div class="px-4 not-prose">
+    <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3">
+      {{ range .Paginator.Pages }}
+      <div class="flex flex-col overflow-hidden rounded-lg shadow transition hover:shadow-lg group">
+        <a href="{{.Permalink}}" class="block group">
+          {{ with .Params.featured_image }}
+          {{ with resources.Get . }}
+          {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
+          <img src="{{ $postimage }}" class="h-56 w-full object-cover"
+              loading="lazy" alt="{{ .Title }}" />
+          {{ end }}
+          {{ end }}
+          <div class="p-4 sm:p-6">
+            <time datetime="2020-02-12" class="block text-xs text-gray-500"> {{.Date.Format "2006-01-02"}} </time>
+            <strong class="mt-0.5 text-lg text-gray-900">{{.Title}}</strong>
+            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+              {{ .Params.summary }}
+            </p>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
