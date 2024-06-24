@@ -6,6 +6,7 @@ paginate = 6
 enableRobotsTXT = true
 enableGitInfo = true
 enableEmoji = true
+enableInlineShortcodes = true #To use this shortcode inline, inline shortcode needs to be enabled in the config:
 
 [services]
   [services.googleAnalytics]

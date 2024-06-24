@@ -30,6 +30,22 @@ Naša vizija je biti vodeća građevinska tvrtka u Hrvatskoj i regiji, prepoznat
 
 Naša misija je pružiti visokokvalitetne i pouzdane građevinske usluge našim klijentima, uz poštovanje propisa, standarda i zaštite okoliša. Strastveni smo u ostvarivanju kreativnih i inovativnih rješenja, te se kontinuirano razvijamo i usavršavamo kako bismo zadovoljili potrebe naših klijenata.
 
+{{< details title="Click me to reveal" closed="true" >}}
+
+This will be hidden by default.
+
+{{< /details >}}
+
+{{< details title="Details" >}}
+
+This is the content of the details.
+
+Markdown is **supported**.
+
+{{< /details >}}
+
+{{< icon "github" >}}
+
 ## Certifikati
 
 Neving d.o.o.
