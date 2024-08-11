@@ -86,7 +86,7 @@ enableInlineShortcodes = true #To use this shortcode inline, inline shortcode ne
 [module]
   [module.hugoVersion]
     extended = true
-    min = '0.112.0'
+    min = '0.131.0'
   [[module.mounts]]
     source = "assets"
     target = "assets"
