@@ -1,5 +1,5 @@
 ---
-title: O Neving
+title: O nama
 slug: o-nama
 draft: false
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -22,6 +22,12 @@ Naši projekti su prepoznati po inovativnosti, funkcionalnosti i estetici te smo
 
 Ako planirate graditi, adaptirati ili renovirati, obratite nam se s povjerenjem. Naš stručni tim će se pobrinuti da Vaš projekt bude realiziran u najkraćem mogućem roku, s najvišom kvalitetom i po konkurentnim cijenama. Kontaktirajte nas i uvjerite se u našu kvalitetu!
 
+Povijest
+
+godine kao obiteljski obrt za građevinske usluge. Kroz više od 50 godina neprekinutog rada i iskustva na svim velikim projektima izgradnje prerasli smo u eminentnu građevinsku tvrtku. Nudimo sve usluge visokogradnje i jamčimo kvalitetu u skladu s najvišim standardima struke. Naša referentna lista, koja uključuje izgradnju stambenih zgrada i kompleksa, hotela, te poslovnih i industrijskih objekata pokazuje naše mogućnosti i našu težnju ka izvrsnosti u svim fazama izgradnje.
+
+
+
 ## Vizija
 
 Naša vizija je biti vodeća građevinska tvrtka u Hrvatskoj i regiji, prepoznata po visokoj kvaliteti usluga, inovativnosti, stručnosti i pouzdanosti. Želimo biti partneri našim klijentima u ostvarenju njihovih želja i potreba u građevinarstvu.
@@ -30,13 +36,13 @@ Naša vizija je biti vodeća građevinska tvrtka u Hrvatskoj i regiji, prepoznat
 
 Naša misija je pružiti visokokvalitetne i pouzdane građevinske usluge našim klijentima, uz poštovanje propisa, standarda i zaštite okoliša. Strastveni smo u ostvarivanju kreativnih i inovativnih rješenja, te se kontinuirano razvijamo i usavršavamo kako bismo zadovoljili potrebe naših klijenata.
 
-{{< details title="Click me to reveal" closed="true" >}}
+{{< details title="Što radimo" closed="true" >}}
 
 This will be hidden by default.
 
 {{< /details >}}
 
-{{< details title="Details" >}}
+{{< details title="Kako radimo" >}}
 
 This is the content of the details.
 
@@ -44,13 +50,12 @@ Markdown is **supported**.
 
 {{< /details >}}
 
-{{< icon "github" >}}
-
 ## Certifikati
 
 Neving d.o.o.
 
-ISO 45001:2018
-ISO 50001:2018
-ISO 14001:2015
-ISO 9001:2015, ISO 9001:2015
+ISO 45001:2018  
+ISO 50001:2018  
+ISO 14001:2015  
+ISO 9001:2015  
+ISO 9001:2015  

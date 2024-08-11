@@ -20,9 +20,9 @@ enableInlineShortcodes = true #To use this shortcode inline, inline shortcode ne
     weight = 1
     [languages.hr.menus]
       [[languages.hr.menus.main]]
-        name = 'Objave'
-        pageRef = '/posts'
-        identifier = 'posts'
+        name = 'Projekti'
+        pageRef = '/projects'
+        identifier = 'projects'
         weight = 10
   [languages.en]
     languageCode = 'en'
@@ -30,10 +30,10 @@ enableInlineShortcodes = true #To use this shortcode inline, inline shortcode ne
     contentDir = 'content/en'
     weight = 2
     [languages.en.menus]
-      [[languages.hr.menus.main]]
-        name = 'Posts'
-        pageRef = '/posts'
-        identifier = 'posts'
+      [[languages.en.menus.main]]
+        name = 'Projects'
+        pageRef = '/projects'
+        identifier = 'projects'
         weight = 10
 
 [params]

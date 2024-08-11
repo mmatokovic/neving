@@ -7,11 +7,17 @@
 [contact_company_information]
   other = 'Kontakt podaci'
 
-[contact_company_data]
-  other = 'Matični podaci tvrtke'
+[contact_company_hours]
+  other = 'Radno vrijeme'
 
-[contact_capital]
-  other = 'Temeljni kapital'
+[contact_work_hours]
+  other = 'ponedjeljak - petak od 06 - 22 h'
+
+[contact_saturday]
+  other = 'subota od 06 - 14 h'
+
+[contact_holiday]
+  other = 'nedjeljom, državnim praznicima i blagdanima ne radimo'
 
 [contact_vat]
   other = 'OIB'
@@ -20,13 +26,13 @@
   other = 'Ime'
 
 [contact_email]
-  other = 'Email adresa'
+  other = 'E-mail adresa'
 
 [contact_phone]
   other = 'Broj telefona'
 
 [contact_message]
-  other = 'Poruka'
+  other = 'Vaša poruka'
 
 [contact_enquiry]
-  other = 'Pošaljite'
+  other = 'POŠALJI'

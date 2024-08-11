@@ -7,11 +7,17 @@
 [contact_company_information]
   other = 'Company Information'
 
-[contact_company_data]
-  other = 'Company Data'
+[contact_company_hours]
+  other = 'Working hours'
 
-[contact_capital]
-  other = 'Share capital'
+[contact_work_hours]
+  other = 'ponedjeljak - petak od 06 - 22 h'
+
+[contact_saturday]
+  other = 'subota od 06 - 14 h'
+
+[contact_holiday]
+  other = 'nedjeljom, državnim praznicima i blagdanima ne radimo'
 
 [contact_vat]
   other = 'VAT ID'

@@ -10,13 +10,19 @@ menus:
 
 ## Neving d.o.o.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+NEVING d.o.o., OIB 70989676533, MB 00240559 sukladno važećim odredbama Zakona o računovodstvu spada u skupinu malih poduzetnika, a tip vlasništva je privatno od osnivanja. Pretežita djelatnost subjekta je 4221 - Gradnja cjevovoda za tekućine i plinove (F - GRAĐEVINARSTVO).
+
+Broj zaposlenih prema satima rada u 2023. godini je 69, što je povećanje od 213,64% u odnosu na prethodnu godinu. Ukupni prihodi u 2023. godini iznosili su € 15,92 mil., što je povećanje od 991,69% u odnosu na prethodnu godinu. U 2023. godini poslovni subjekt ostvario je neto dobit od € 693.968, što je povećanje od 779,61% u odnosu na prethodnu godinu.
+
+Pokazatelj uspješnosti poslovanja EBIT u 2023. godini iznosi € 707.903, a u području djelatnosti € 1,25 mlrd. Pokazatelj uspješnosti poslovanja EBITDA u 2023. godini iznosi € 970.221, a u području djelatnosti € 2,02 mlrd.
+
+Poslovni subjekt nalazi se na 108. mjestu po ukupnom prihodu, na 192. mjestu po zaposlenicima i na 247. mjestu po dobiti razdoblja od ukupno 22.333 subjekta u području djelatnosti (F - GRAĐEVINARSTVO).
 
 #### Radno vrijeme
 
-* ponedjeljak - petak od 06 - 22 h (uvrećani i rasuti cement i Namal)
-* subota od 06 - 14 h (samo rasuti cement)
-* nedjeljom, državnim praznicima i blagdanima nema otpreme
+* ponedjeljak - petak od 06 - 22 h
+* subota od 06 - 14 h
+* nedjeljom, državnim praznicima i blagdanima ne radimo
 
 ***
 
@@ -38,10 +44,14 @@ E-mail: [info@neving.hr](mailto:info@neving.hr)
 
 ***
 
-## General information
+## Podaci Tvrtke
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+**NEVING društvo s ograničenom odgovornošću za građenje, trgovinu i usluge**  
 
-For more information, please contact us by telephone on [+385-1-4580-855](tel:+385-1-4580-855), or via the following email address [info@neving.hr](mailto:info@neving.hr)
-
-© 2024 Neving d.o.o. All rights reserved.
+**Sjedište**: Ulica Pavla Radića 3, 10000 Zagreb  
+**OIB**: 70989676533  
+**Matični broj**: 00240559  
+**Temeljni kapital**: € 2.640, uplaćen u cijelosti  
+**Djelatnosti upisane u registar**: Građenje, projektiranje i nadzor  
+**Uprava**: direktor Krešimir Nevisti, prokurist Petar Nevistić  
+**Računi**: Hrvatska poštanska banka d.d., Zagreb – IBAN: HR  

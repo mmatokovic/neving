@@ -3,8 +3,8 @@
     <div x-data="{ open: false }" class="flex h-16 items-center justify-between">
       <div class="flex-1 md:flex md:items-center md:gap-12">
         <a href="{{ .Site.BaseURL | relLangURL }}" class="flex group">
-          <img src="/favicon.ico" class="h-9 w-9 group-hover:opacity-50" alt="logo" />
-          <span class="mt-1 ml-3 text-xl font-black tracking-tight uppercase text-blue-800 group-hover:text-gray-400/60">
+          <img src="/favicon.ico" class="h-9 w-9 group-hover:scale-125" alt="logo" />
+          <span class="mt-1 ml-3 text-xl font-black tracking-tight uppercase text-blue-500 group-hover:text-blue-500/60">
             {{ .Site.Title }}
           </span>
         </a>
@@ -29,7 +29,7 @@
       </div>
       <div class="flex items-center gap-4">
         <div class="sm:flex sm:gap-4">
-          {{ if .Site.IsMultiLingual }}
+          {{ if hugo.IsMultilingual }}
           {{ range .Site.Languages }}
             {{ if eq . $.Site.Language }}
               <a href="#" class="hidden capitalize">{{ .LanguageCode }}</a>

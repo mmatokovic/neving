@@ -22,10 +22,11 @@
                           {{ .Params.summary }}
                       </p>
                   </div>
+                  {{ with .GetTerms "tags" }}
                   <div class="flex pt-6 font-medium text-md">
                       <span class="pr-2 font-black">Tags:</span>
                       <span>
-                      {{ range $elem_index, $elem_val := (.GetTerms "tags") }}
+                      {{ range $elem_index, $elem_val := . }}
                       {{- if gt $elem_index 0 }}, {{ end -}}
                       <a href="{{ .Permalink }}"
                          class="inline-flex items-center rounded-md hover:text-gray-500 px-2.5 py-0.5 
@@ -34,6 +35,7 @@
                       {{- end -}}
                       </span>
                   </div>
+                  {{ end }}
                   <div class="flex items-center mt-6">
                       <div class="flex-shrink-0">
                           <span class="sr-only">{{ .Params.author }}</span>

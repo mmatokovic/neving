@@ -4,16 +4,20 @@
     <h1 class="mb-4 text-4xl font-bold leading-none tracking-tight text-gray-900 md:text-5xl">
       Kontaktirajte nas
     </h1>
+    <p class="mt-4 text-gray-500 sm:text-xl pb-8">
+      Na raspolaganju smo za sve Vaše poruke i upite.
+      Obratite nam se s povjerenjem!
+    </p>
     <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
       <div class="lg:col-span-2 lg:py-12">
         <address class="not-italic">
           <h1 class="max-w-xl text-2xl font-bold mb-6">
             {{ T "contact_company_information"}}:
           </h1>
-          <b>Neving d.o.o. - Zagreb</b>
+          <b>Neving d.o.o.</b>
           <p>{{ site.Data.links.adresa }}</p>
           <p>
-            Tel:
+            Info telefon:
             <a href="mailto:{{ site.Data.links.tel }}">
               {{ site.Data.links.tel }}
             </a>           
@@ -22,7 +26,6 @@
             Fax: {{ site.Data.links.fax }}         
           </p>
           <p>
-            E-mail:
             <a class="text-blue-600 hover:text-blue-400 underline" href="mailto:{{ site.Data.links.mail }}">
               {{ site.Data.links.mail }}
             </a>           
@@ -30,11 +33,13 @@
         </address>
         <address>
           <h1 class="max-w-xl text-2xl font-bold mb-6 mt-6">
-            {{ T "contact_company_data"}}:
+            {{ T "contact_company_hours"}}:
           </h1>
-          <b>{{ T "contact_vat"}}:</b> {{ site.Data.links.oib }}<br>
-          <b>IBAN:</b> {{ site.Data.links.iban }}<br>
-          <b>{{ T "contact_capital"}}:</b> {{ site.Data.links.kapital }}
+          <ul class="list-disc list-inside">
+            <li>{{ T "contact_work_hours"}}</li>
+            <li>{{ T "contact_saturday"}}</li>
+            <li>{{ T "contact_holiday"}}</li>
+          </ul>
         </address>
       </div>
       <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
@@ -46,7 +51,7 @@
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
               <label class="sr-only" for="email">{{ T "contact_email"}}</label>
-              <input class="w-full rounded-lg border-2 border-gray-200 p-3 text-sm" placeholder="{{ T "contact_email"}}" type="email" id="email"/>
+              <input class="w-full rounded-lg border-2 border-gray-200 p-3 text-sm font-medium" placeholder="{{ T "contact_email"}}" type="email" id="email"/>
             </div>
             <div>
               <label class="sr-only" for="phone">{{ T "contact_phone"}}</label>
@@ -57,17 +62,20 @@
             <label class="sr-only" for="message">{{ T "contact_message"}}</label>
             <textarea class="w-full rounded-lg border-2 border-gray-200 p-3 text-sm" placeholder="{{ T "contact_message"}}" rows="8" id="message"></textarea>
           </div>
+          {{ with .Site.GetPage "contact" }}
+          <p class="text-sm text-gray-500">
+            Slanjem upita potvrđujete da ste u <a href="{{ .RelPermalink }}" class="underline">Informaciji o zaštiti osobnih podataka</a> upoznati o njihovoj pohrani,
+            čuvanju i obradi, te svojim ostalim pravima vezanima uz zaštitu osobnih podataka.
+          </p>
+          {{ end }}
           <div class="mt-4">
-            <button type="submit" class="inline-block w-full rounded-lg bg-blue-800 px-5 py-3 font-medium text-white sm:w-auto">
+            <button type="submit" class="text-sm inline-block w-full rounded-lg bg-blue-800 px-5 py-3 font-semibold text-white sm:w-auto">
               {{ T "contact_enquiry"}}
             </button>
           </div>
         </form>
       </div>
     </div>
-  </section>
-  <section>
-    {{ partial "sections/google-map" . }}
   </section>
   <section class="bg-gray-100">
     <article class="max-w-screen-xl px-6 pt-6 pb-16 mx-auto prose lg:prose-xl">

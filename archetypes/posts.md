@@ -1,13 +1,12 @@
----
-title: "Kakao"
-date: 2024-04-21T08:11:00+02:00
-draft: false
-featured_image: "/images/featured/scott-blake-x-ghf9LjrVg-unsplash.jpg"
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero.
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero. Vestibulum vel convallis felis. Ut finibus lorem vestibulum lobortis rhoncus.
-categories: [Posts]
-tags: [Blogs]
----
++++
+title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+date = {{ .Date }}
+draft = true
+featured_image = "/images/featured/scott-blake-x-ghf9LjrVg-unsplash.jpg"
+summary = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero.'
+description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero. Vestibulum vel convallis felis. Ut finibus lorem vestibulum lobortis rhoncus.'
+tags = []
++++
 
 ## h2 Heading
 
@@ -145,6 +144,8 @@ Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
 ## Images
 
+{{< icon "github" >}}
+
 ![Minion](https://octodex.github.com/images/minion.png)
 ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
@@ -158,6 +159,16 @@ With a reference later in the document defining the URL location:
 
 
 ## Plugins
+
+{{< /details >}}
+
+{{< details title="Details" >}}
+
+This is the content of the details.
+
+Markdown is **supported**.
+
+{{< /details >}}
 
 The killer feature of `markdown-it` is very effective support of
 [syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
