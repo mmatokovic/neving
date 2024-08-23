@@ -11,7 +11,7 @@
       </div>
       <div class="md:flex md:items-center md:gap-12">
         <nav class="hidden md:block">
-          <ul class="flex items-center gap-6 text-base font-medium leading-6 text-black">
+          <ul class="flex items-center gap-6 text-lg font-medium leading-6 text-black">
           {{ range .Site.Menus.main }}
             <a class="hover:text-gray-500/75 relative font-medium text-black before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-gradient-to-r from-indigo-300 to-indigo-600 before:transition hover:before:scale-100 {{ if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" .)}} text-gray-500/75{{ end }}"
               href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">

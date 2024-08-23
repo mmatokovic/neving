@@ -26,7 +26,22 @@ Povijest
 
 godine kao obiteljski obrt za građevinske usluge. Kroz više od 50 godina neprekinutog rada i iskustva na svim velikim projektima izgradnje prerasli smo u eminentnu građevinsku tvrtku. Nudimo sve usluge visokogradnje i jamčimo kvalitetu u skladu s najvišim standardima struke. Naša referentna lista, koja uključuje izgradnju stambenih zgrada i kompleksa, hotela, te poslovnih i industrijskih objekata pokazuje naše mogućnosti i našu težnju ka izvrsnosti u svim fazama izgradnje.
 
+## Profesionalni Tim
 
+Neving je firma koja pruža niz usluga uključujući projektiranje, vizualizaciju, gradnju i adaptaciju. Imamo godine iskustva na tom području i posvećeni smo isporuci visokokvalitetnog dizajna i iznimne korisničke usluge.
+
+Naš tim blisko surađuje s klijentima kako bi razumio njihove potrebe i viziju te nastojimo premašiti njihova očekivanja na svakom projektu. Bilo da želite izgraditi novi dom, renovirati postojeći prostor ili jednostavno trebate pomoć u vizualizaciji svojih ideja, Riva Consulting ima stručnost i iskustvo koje će vam pomoći da vaš projekt oživite.
+
+Kontaktirajte nas danas kako biste saznali više o tome kako vam možemo pomoći da postignete svoje arhitektonske ciljeve.
+
+Naše vrijednosti
+Usmjerenost na potrebe Investitora
+Stalno poboljšanje kvalitete usluga
+Zadovoljstvo izvršenim poslom
+Konkurentan položaj na tržištu
+Zapošljavanje i dodatno educiranje stručnog osoblja
+Briga o zaštiti okoliša, zdravlja i sigurnost na radu
+Očuvanje prirodnih resursa
 
 ## Vizija
 

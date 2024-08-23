@@ -14,19 +14,53 @@
       </div>
       <div class="lg:py-24">
         <h2 class="text-3xl font-bold sm:text-4xl">GRADIMO BUDUĆNOST ZAJEDNO</h2>
-
         <p class="mt-4 text-gray-600">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis
           eius quos ea neque sunt, accusantium soluta minus veniam tempora deserunt? Molestiae eius
           quidem quam repellat.
         </p>
-
-        <a
-          href="#"
-          class="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
-        >
+        <a href="#" class="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400">
           Kontaktirajte Nas
         </a>
+      </div>
+    </div>
+  </section>
+  <section class="max-w-md px-4 mx-auto md:pt-24 md:pb-16 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="lg:grid lg:grid-cols-2 lg:items-center lg:gap-24">
+      <div class="my-12 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
+        <div class="flex justify-center col-span-1 px-8 py-8 bg-gray-50">
+          {{ with resources.Get "images/global/hzpp-logo.svg" }}
+            <img src="{{ .RelPermalink }}" class="max-h-12 stroke-2" alt="unsplash" loading="lazy" />
+          {{ end }}
+        </div>
+        <div class="flex justify-center col-span-1 px-8 py-8 bg-gray-50">
+          {{ with resources.Get "images/global/hep-logo.svg" }}
+            <img src="{{ .RelPermalink }}" class="max-h-12 stroke-2" alt="unsplash" loading="lazy" />
+          {{ end }}
+        </div>
+        <div class="flex justify-center col-span-1 px-8 py-8 bg-gray-50">
+          {{ with resources.Get "images/global/Hrvatske-autoceste-logo.png" }}
+            <img src="{{ .RelPermalink }}" class="max-h-12" alt="unsplash" loading="lazy" />
+          {{ end }}
+        </div>
+        <div class="flex justify-center col-span-1 px-8 py-8 bg-gray-50">
+          {{ with resources.Get "images/global/zagreb-logo.svg" }}
+            <img src="{{ .RelPermalink }}" class="max-h-12 stroke-2" alt="unsplash" loading="lazy" />
+          {{ end }}
+        </div>
+      </div>
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Povijerenje su nam dali
+        </h2>
+        <p class="max-w-3xl mt-6 text-lg leading-7 text-gray-900">
+          Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae.
+        </p>
+        <div class="my-6">
+          <a href="#" class="text-base font-bold text-blue-800 group relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-gradient-to-r from-indigo-300 to-indigo-600 before:transition hover:before:scale-100 ">
+            Meet our investors and advisors <svg class="h-5 w-5 inline-block transition transform group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentcolor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -106,274 +140,74 @@
           </svg>
         </div>
         <div class="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:h-full lg:max-w-none lg:pl-12">
-          {{ with resources.Get .Params.sections.trust.image }}
-          {{ $small := (.Resize "400x webp q80").RelPermalink }}
-          {{ $medium := (.Resize "550x webp q80").RelPermalink }}
-          {{ $large := (.Resize "900x webp q80").RelPermalink }}
-          {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
-          <img src="{{ $featuredimage }}" srcset="{{- with $small -}}, {{.}} 400w{{- end -}} {{- with $medium -}}, {{.}} 550w{{- end -}} {{- with $large -}}, {{.}} 768w{{- end -}} {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
+            {{ with resources.Get .Params.sections.trust.image }}
+            {{ $small := (.Resize "400x webp q80").RelPermalink }}
+            {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+            {{ $large := (.Resize "900x webp q80").RelPermalink }}
+            {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+            <img src="{{ $featuredimage }}" srcset="{{- with $small -}}, {{.}} 400w{{- end -}} {{- with $medium -}}, {{.}} 550w{{- end -}} {{- with $large -}}, {{.}} 768w{{- end -}} {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
             class="w-full rounded-lg shadow-xl lg:h-full lg:w-auto lg:max-w-none" loading="lazy" width="100%" height="{{ .Height }}" alt="{{ .Params.title }}" />
-          {{ end }}
+            {{ end }}
         </div>
       </div>
     </div>
   </section>
   <section>
-    <div class="bg-gray-100 my-4 sm:my-6 lg:my-8">
+    <div class="my-4 sm:my-6 lg:my-8">
     <div class="max-w-screen-xl px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8 mx-auto relative">
       <div class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
-        <div class="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left">
+        <div class="mx-auto max-w-lg  lg:mx-0">
           <h2 class="text-3xl font-bold sm:text-4xl">Djelatnosti</h2>
-
           <p class="mt-4 text-gray-600">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero aliquid sint distinctio
             iure ipsum cupiditate? Quis, odit assumenda? Deleniti quasi inventore, libero reiciendis
             minima aliquid tempora. Obcaecati, autem.
           </p>
-
-          <a
-            href="#"
-            class="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
-          >
-            Get Started Today
+          <a href="#" class="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400">
+            Usluge
           </a>
         </div>
-
         <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
-          <a
-            class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-            href="#"
-          >
-            <span class="inline-block rounded-lg bg-gray-50 p-3">
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                <path
-                  d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                ></path>
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                ></path>
-              </svg>
-            </span>
-
-            <h2 class="mt-2 font-bold">Accountant</h2>
-
+          <a class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="#">
+            <h2 class="mt-2 font-bold">Realizacija usluge građenja</h2>
             <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-              Lorem ipsum dolor sit amet consectetur.
+              Potrebne aktivnosti verifikacije, nadzora i kontrole koje su specifične za realizaciju usluge građenja.
             </p>
           </a>
-
-          <a
-            class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-            href="#"
-          >
-            <span class="inline-block rounded-lg bg-gray-50 p-3">
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                <path
-                  d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                ></path>
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                ></path>
-              </svg>
-            </span>
-
-            <h2 class="mt-2 font-bold">Accountant</h2>
-
+          <a class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="#">
+            <h2 class="mt-2 font-bold">Nabava</h2>
             <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-              Lorem ipsum dolor sit amet consectetur.
+              Proces nabavljanja proizvoda u skladu sa utvrđenim zahtjevima.
             </p>
           </a>
-
-          <a
-            class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-            href="#"
-          >
-            <span class="inline-block rounded-lg bg-gray-50 p-3">
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                <path
-                  d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                ></path>
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                ></path>
-              </svg>
-            </span>
-
-            <h2 class="mt-2 font-bold">Accountant</h2>
-
+          <a class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="#">
+            <h2 class="mt-2 font-bold">Proizvodja i pružanje usluge građenja</h2>
             <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-              Lorem ipsum dolor sit amet consectetur.
+              izgradnja uz svu potrebnu projektnu i tehničku dokumentaciju.
             </p>
           </a>
-
-          <a
-            class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-            href="#"
-          >
-            <span class="inline-block rounded-lg bg-gray-50 p-3">
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                <path
-                  d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                ></path>
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                ></path>
-              </svg>
-            </span>
-
-            <h2 class="mt-2 font-bold">Accountant</h2>
-
+          <a class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="#">
+            <h2 class="mt-2 font-bold">Proces građenja</h2>
             <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-              Lorem ipsum dolor sit amet consectetur.
+              Usklađenost sustava upravljanja kvalitetom i okolišem, mjerenjem zadovoljstva Investitora i za mjerenjem djelotvornosti procesa.
             </p>
           </a>
-
-          <a
-            class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-            href="#"
-          >
-            <span class="inline-block rounded-lg bg-gray-50 p-3">
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                <path
-                  d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                ></path>
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                ></path>
-              </svg>
-            </span>
-
-            <h2 class="mt-2 font-bold">Accountant</h2>
-
+          <a class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="#">
+            <h2 class="mt-2 font-bold">Upravljanje resursima</h2>
             <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-              Lorem ipsum dolor sit amet consectetur.
+              Najznačajniji resurs je stručno, osposobljeno i svjesno osoblje. .
             </p>
           </a>
-
-          <a
-            class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-            href="#"
-          >
-            <span class="inline-block rounded-lg bg-gray-50 p-3">
-              <svg
-                class="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                <path
-                  d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-                ></path>
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                ></path>
-              </svg>
-            </span>
-
-            <h2 class="mt-2 font-bold">Accountant</h2>
-
+          <a class="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring" href="#">
+            <h2 class="mt-2 font-bold">Održavanje</h2>
             <p class="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-              Lorem ipsum dolor sit amet consectetur.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
           </a>
         </div>
       </div>
     </div>
   </div>
-  </section>
-  <section class="max-w-md px-4 mx-auto md:pt-24 md:pb-16 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-    <div class="lg:grid lg:grid-cols-2 lg:items-center lg:gap-24">
-      <div class="my-12 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
-        <div class="flex justify-center col-span-1 px-8 py-8 bg-gray-50">
-          {{ with resources.Get "images/global/hzpp-logo.svg" }}
-            <img src="{{ .RelPermalink }}" class="max-h-12 stroke-2" alt="unsplash" loading="lazy" />
-          {{ end }}
-        </div>
-        <div class="flex justify-center col-span-1 px-8 py-8 bg-gray-50">
-          {{ with resources.Get "images/global/hep-logo.svg" }}
-            <img src="{{ .RelPermalink }}" class="max-h-12 stroke-2" alt="unsplash" loading="lazy" />
-          {{ end }}
-        </div>
-        <div class="flex justify-center col-span-1 px-8 py-8 bg-gray-50">
-          {{ with resources.Get "images/global/Hrvatske-autoceste-logo.png" }}
-            <img src="{{ .RelPermalink }}" class="max-h-12" alt="unsplash" loading="lazy" />
-          {{ end }}
-        </div>
-        <div class="flex justify-center col-span-1 px-8 py-8 bg-gray-50">
-          {{ with resources.Get "images/global/zagreb-logo.svg" }}
-            <img src="{{ .RelPermalink }}" class="max-h-12 stroke-2" alt="unsplash" loading="lazy" />
-          {{ end }}
-        </div>
-      </div>
-      <div>
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Povijerenje su nam dali
-        </h2>
-        <p class="max-w-3xl mt-6 text-lg leading-7 text-gray-900">
-          Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae.
-        </p>
-        <div class="my-6">
-          <a href="#" class="text-base font-bold text-blue-800 group relative before:absolute before:-bottom-1 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-gradient-to-r from-indigo-300 to-indigo-600 before:transition hover:before:scale-100 ">
-            Meet our investors and advisors <svg class="h-5 w-5 inline-block transition transform group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentcolor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0-7 7m7-7H3"></path></svg>
-          </a>
-        </div>
-      </div>
-    </div>
   </section>
   <section class="relative px-1 pt-8 pb-4 bg-transparent lg:px-8 lg:pt-12 lg:mb-4 md:mt-12">
     <div class="absolute inset-0">
