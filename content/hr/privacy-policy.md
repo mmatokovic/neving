@@ -11,9 +11,9 @@ menus:
 
 ## Zaštita privatnosti i ostali dokumenti
 
-#### Informacija o zaštiti osobnih podataka korisnika Croatia osiguranja
+#### Informacija o zaštiti osobnih podataka korisnika Nevinga
 
-Opća uredba o zaštiti podataka ili GDPR (engl. General Data Protection Regulation) uredba je (EU) 2016/679 Europskog parlamenta i Vijeća od 27. travnja 2016. godine o zaštiti pojedinaca u vezi s obradom osobnih podataka i o slobodnom kretanju takvih podataka. CROATIA osiguranje osobne podatke prikuplja i obrađuje pošteno, zakonito i transparentno te brine o njihovoj točnosti, potpunosti, ažurnosti i sigurnosti.
+Opća uredba o zaštiti podataka ili GDPR (engl. General Data Protection Regulation) uredba je (EU) 2016/679 Europskog parlamenta i Vijeća od 27. travnja 2016. godine o zaštiti pojedinaca u vezi s obradom osobnih podataka i o slobodnom kretanju takvih podataka. Neving osobne podatke prikuplja i obrađuje pošteno, zakonito i transparentno te brine o njihovoj točnosti, potpunosti, ažurnosti i sigurnosti.
 
 #### Što su osobni podaci?
 Osobnim podacima smatraju se npr. ime, prezime, OIB, datum rođenja, telefonski broj, e-mail adresa, poštanska adresa ili bilo koja druga informacija koja se odnosi na Vas osobno, odnosno koja se može smatrati osobnim podatkom.
