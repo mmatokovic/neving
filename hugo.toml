@@ -2,7 +2,6 @@ baseURL = 'https://neving.netlify.app/'
 languageCode = 'hr'
 title = 'Neving'
 defaultContentLanguage = 'hr'
-paginate = 6
 enableRobotsTXT = true
 enableGitInfo = true
 enableEmoji = true
@@ -11,6 +10,9 @@ enableInlineShortcodes = true #To use this shortcode inline, inline shortcode ne
 [services]
   [services.googleAnalytics]
     ID = ''
+
+[pagination]
+  pagerSize = 10
 
 [languages]
   [languages.hr]
@@ -22,7 +24,7 @@ enableInlineShortcodes = true #To use this shortcode inline, inline shortcode ne
       [[languages.hr.menus.main]]
         name = 'Projekti'
         pageRef = '/projects'
-        identifier = 'projects'
+        identifier = 'projekti'
         weight = 10
   [languages.en]
     languageCode = 'en'
@@ -85,7 +87,7 @@ enableInlineShortcodes = true #To use this shortcode inline, inline shortcode ne
 [module]
   [module.hugoVersion]
     extended = true
-    min = '0.131.0'
+    min = '0.135.0'
   [[module.mounts]]
     source = "assets"
     target = "assets"
