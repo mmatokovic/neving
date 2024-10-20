@@ -4,7 +4,7 @@
       <div class="flex-1 md:flex md:items-center md:gap-12">
         <a href="{{ .Site.BaseURL | relLangURL }}" class="flex group">
           <img src="/favicon.ico" class="h-9 w-9 group-hover:scale-125" alt="logo" />
-          <span class="mt-1 ml-3 text-xl font-black tracking-tight uppercase text-blue-500 group-hover:text-blue-500/60">
+          <span class="mt-1 ml-3 text-xl font-black tracking-tight uppercase text-sky-700 group-hover:text-sky-700/60">
             {{ .Site.Title }}
           </span>
         </a>
@@ -32,10 +32,10 @@
           {{ if hugo.IsMultilingual }}
           {{ range .Site.Languages }}
             {{ if eq . $.Site.Language }}
-              <a href="#" class="hidden capitalize">{{ .LanguageCode }}</a>
+              <a href="#" class="hidden uppercase">{{ .LanguageCode }}</a>
             {{ else }}
               {{ range $.Translations }}
-              <a href="{{ .Permalink }}" class="px-5 py-2.5 text-sm capitalize text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-indigo-600">{{ .Language.LanguageCode }}</a>
+              <a href="{{ .Permalink }}" class="px-5 py-2.5 text-sm uppercase text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-indigo-600">{{ .Language.LanguageCode }}</a>
               {{ end }}
             {{ end }}
           {{ end }}

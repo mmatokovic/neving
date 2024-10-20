@@ -48,4 +48,4 @@ Svi prijavljeni kandidati će biti kontaktirani. Zahvaljujemo svim kandidatima n
 
 ---
 
-**[Ime Tvrtke]** zadržava pravo kontaktirati samo kandidate koji uđu u uži izbor. Svi podaci kandidata bit će korišteni isključivo u svrhu zapošljavanja.
+**Neving d.o.o.** zadržava pravo kontaktirati samo kandidate koji uđu u uži izbor. Svi podaci kandidata bit će korišteni isključivo u svrhu zapošljavanja.

@@ -13,7 +13,7 @@ S našim timom profesionalaca možete oživjeti cijelu svoju maštu. Možemo Vam
 Kvalificirani stručnjaci
 Naša firma ima kvalificirane stručnjake s znanjem, vještinom i iskustvom u području arhitekture.
 
-## Zapošljavamo velik broj djelatnika optimalne kvalifikacijske strukture.
+## Zapošljavamo velik broj djelatnika optimalne kvalifikacijske strukture
 
 Svaki naš projekt započinje vještim timom ljudi i zato smo posebno ponosni na predanost i znanja svojih zaposlenika i njihov doprinos radu kompanije.
 Cijenimo upornost, odgovornost te prije svega timski rad. Ako volite rad u poticajnom okruženju i želite svakodnevno razvijati svoje potencijale te pomoći kolegama da učine isto, javite se na neki od naših trenutačno otvorenih natječaja.

@@ -1,6 +1,7 @@
 <head>
   {{ partial "sections/site_schema.html" . }}
   {{ hugo.Generator -}}
+  <base href="/">
   <meta charset="UTF-8" />
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -27,6 +28,9 @@
   {{ with .OutputFormats.Get "rss" -}}
   {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
   {{ end }}
+  <link rel="preload" href="fonts/Helvetica.woff" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/favicon.ico" as="image" type="image/x-icon">
+  <link rel="preload" href="/images/global/logo.jpg" as="image" type="image/jpeg">
   <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
   <link rel="icon" href="/favicon.ico">
   <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
