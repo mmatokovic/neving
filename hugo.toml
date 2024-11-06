@@ -47,6 +47,11 @@ enableInlineShortcodes = true #To use this shortcode inline, inline shortcode ne
   [params.author]
     name = "Mislav Matoković"
     email = 'mislav.mat@hotmail.com'
+  # For image jslibs/gallery
+  [params.gallery]
+    shuffle     = false
+    reverse     = true
+    enable_exif = false
     
 [sitemap]
   changefreq = "monthly"

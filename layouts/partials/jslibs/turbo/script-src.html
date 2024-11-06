@@ -1,3 +1,4 @@
+<!--As defined in hugo.toml under [[module.mounts]]!-->
 {{ $turbo := resources.Get "jslibs/turbo/turbo.es2017-esm.js" }}
 {{- $js := $turbo | minify | fingerprint -}}
 
