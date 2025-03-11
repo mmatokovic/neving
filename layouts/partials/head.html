@@ -25,7 +25,6 @@
   {{ end }}
   {{ partialCached "jslibs/alpinejs/script-src.html" "-" }}
   {{ partialCached "jslibs/turbo/script-src.html" "-" }}
-  {{ block "head-custom" . }}{{ end }}
   {{ with .OutputFormats.Get "rss" -}}
   {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
   {{ end }}
@@ -35,21 +34,4 @@
   <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
   <link rel="icon" href="/favicon.ico">
   <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
-
-
-      {{/* Load JavaScript */}}
-      {{ $js := resources.Get "js/gallery/index.js" }}
-      {{ $params := dict }}
-      {{ $sourceMap := cond hugo.IsProduction "" "inline" }}
-      {{ $opts := dict "sourceMap" $sourceMap "minify" hugo.IsProduction "target" "es2018" "params" $params }}
-      {{ $js = $js | js.Build $opts }}
-      {{ if hugo.IsProduction }}
-        {{ $js = $js | fingerprint }}
-      {{ end }}
-      <script
-        src="{{ $js.RelPermalink }}"
-        {{ if hugo.IsProduction }}integrity="{{ $js.Data.Integrity }}"{{ end }}
-        defer></script>
-  
-      {{ block "head-custom" . }}{{ end }}
 </head>

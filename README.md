@@ -11,7 +11,7 @@ The Neving website built with [Tailwind](https://tailwindcss.com/) and [Hugo](ht
 Start the local development server
 
 ```Bash
-hugo server --disableFastRender --ignoreCache --noHTTPCache --buildDrafts
+hugo server  -F -N -D
 ```
 
 Taxonomy
