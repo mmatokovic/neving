@@ -1,1 +1,3 @@
 # Redirect default subdomain to primary domain
+# https://neving.netlify.app  https://neving.hr 301!
+# http://neving.netlify.app  https://neving.hr 301!
